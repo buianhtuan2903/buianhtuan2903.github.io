@@ -19,7 +19,8 @@
 }
 
 .info > li >img{
-    height: 40px;
+    height: 40px !important;
+    background-color: transparent !important;
 }
 
 li{
