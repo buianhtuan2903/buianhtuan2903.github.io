@@ -15,12 +15,7 @@
     right: 0px;
     margin: auto;
     max-width: 1200px;
-    padding: 40px 15px 60px 15px;
-}
-
-.info > li >img{
-    height: 40px !important;
-    background-color: transparent !important;
+    padding: 40px 10px 60px 10px;
 }
 
 li{
@@ -44,10 +39,6 @@ li{
 .navbar-nav {
     flex-direction: row !important;
     max-width: 500px !important;
-}
-
-.nav-item{
-    min-width: 85px;
 }
 
 #avatar{
@@ -79,10 +70,46 @@ img{
     margin: 10px 0px;
 }
 
-a{
+a:active{
+    color: #4370C0;
+}
+.topnav > .nav-item{
+    padding: 0px 5px;
+}
+
+.button{
+    background-color: white;
+    border-radius: 2px;
+    color: #4370C0 !important;
+    font-weight: 700;
+    min-width: 110px;
+    text-align: center;
+}
+
+i{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.nav-link{
     color: white;
 }
 
-a:active{
-    color: #4370C0;
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    padding: 3px 0px;
+}
+
+.info-list{
+    padding-left: 20px;
 }
