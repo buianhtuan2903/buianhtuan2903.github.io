@@ -13,17 +13,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/eva-icons"></script>
 </head>
 
 <body>
 
     <nav class="navbar bg-dark justify-content-center fixed-top">
         <ul class="navbar-nav topnav">
-            <li class="nav-item">
-                <a class="nav-link" href="" target="_blank">
-                    áds
-                </a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link button" href="">DOWNLOAD CV</a>
             </li>
@@ -38,23 +34,24 @@
                 <div class="name">BUI ANH TUAN</div>
                 <div class="card">
                     <ul class="info-list">
-                        <li><a href="" class="info">
-                            <i class="fab fa-facebook"></i><span>(+84)98 222 7965</span>
+                        <li><div class ="info">
+                            <i data-eva="person" data-eva-fill="#4370C0"></i><span>March 29th, 1994</span>
+                        </div></li>
+                        <li><a href="tel:+84982227965" class="info">
+                            <i data-eva="phone" data-eva-fill="#4370C0"></i><span>(+84)98 222 7965</span>
                         </a></li>
-                        <li><a href="" class="info">
-                            <i class="fas fa-at"></i><span>(+84)98 222 7965</span>
+                        <li><a href="mailto:buianhtuan2903@gmail.com" class="info">
+                            <i data-eva="email" data-eva-fill="#4370C0"></i><span>buianhtuan2903@gmail.com</span>
                         </a></li>
-                        <li><a href="" class="info">
-                            <i class="fab fa-facebook"></i><span>(+84)98 222 7965</span>
+                        <li><a href="https://www.linkedin.com/in/buianhtuan2903/" class="info">
+                            <i data-eva="linkedin" data-eva-fill="#4370C0"></i><span>linkedin/in/buianhtuan2903</span>
                         </a></li>
-                        <li><a href="" class="info">
-                            <i class="fab fa-facebook"></i><span>(+84)98 222 7965</span>
+                        <li><a href="https://buianhtuan2903.github.io/" class="info">
+                            <i data-eva="browser" data-eva-fill="#4370C0"></i><span>buianhtuan2903.github.io</span>
                         </a></li>
-                        <li><a href="" class="info">
-                            <i class="fab fa-facebook"></i><span>(+84)98 222 7965</span>
-                        </a></li>
-                        <li><a href="" class="info">
-                            <i class="fab fa-facebook"></i><span>(+84)98 222 7965</span>
+
+                        <li><a href="https://www.facebook.com/buianhtuan2903" class="info">
+                            <i data-eva="facebook" data-eva-fill="#4370C0"></i><span>facebook.com/buianhtuan2903</span>
                         </a></li>
                     </ul>
                 </div>
@@ -81,7 +78,6 @@
                 </div>
             
                 <div class="card">
-
                         <div class="card-title">
                             2017-2019
                         </div>
@@ -121,8 +117,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="title">CERTIFICATES</div>
+            <div class="col-md-8" >
+                <div class="title" id="bottom">CERTIFICATES</div>
                 <div class="card">
                     TOEIC 665/990 (2016)
                 </div>
@@ -137,16 +133,16 @@
     <nav class="navbar justify-content-center fixed-bottom bg-dark">
         <ul class="navbar-nav nav-fill w-100">
             <li class="nav-item">
+                <a class="nav-link" href="#about">CONTACT</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#experiences">EXPERIENCES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#about">ABOUT</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://github.com/buianhtuan2903?tab=repositories" target="_blank">PROJECTS</a>
+                <a class="nav-link" href="#bottom" >BOTTOM</a>
             </li>
         </ul>      
     </nav>
-
+    <script>eva.replace()</script>
 </body>
 </html>

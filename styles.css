@@ -15,7 +15,7 @@
     right: 0px;
     margin: auto;
     max-width: 1200px;
-    padding: 40px 10px 60px 10px;
+    padding: 40px 0px 60px 0px;
 }
 
 li{
@@ -88,7 +88,8 @@ a:active{
 
 i{
     font-size: 1.5rem;
-    margin-right: 10px;
+    color: #4370C0;
+    width: 21px;
 }
 
 .nav-link{
@@ -112,4 +113,8 @@ a:hover{
 
 .info-list{
     padding-left: 20px;
+}
+
+span{
+    margin-left : 10px;
 }
