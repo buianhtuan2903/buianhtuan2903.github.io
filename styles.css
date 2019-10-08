@@ -115,3 +115,16 @@ a:hover, a:active {
 span{
     margin-left : 10px;
 }
+
+.col-sm-10{
+    padding-right: 0px;
+}
+
+.col-sm-2{
+    border-right: 1px solid #4370C0;
+    padding: 0px;
+}
+
+p{
+    margin-bottom: 0px;
+}
