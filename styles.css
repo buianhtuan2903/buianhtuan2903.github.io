@@ -105,7 +105,7 @@ a:hover, a:active {
 .info{
     display: flex;
     align-items: center;
-    padding: 3px 0px;
+    height: 36px;
 }
 
 .info-list{
