@@ -128,3 +128,9 @@ span{
 p{
     margin-bottom: 0px;
 }
+
+.link{
+    text-decoration: underline;
+    font-style: italic;   
+    color: #4370C0;
+}
