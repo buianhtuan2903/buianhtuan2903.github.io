@@ -30,13 +30,13 @@
 
 .content{
     position: relative;
-    top: 49px;
-    bottom: 49px;
+    top: 19px;
+    /* bottom: 49px; */
     left: 0px;
     right: 0px;
     margin: auto;
     max-width: 1200px;
-    padding: 40px 0px 60px 0px;
+    padding: 40px 0px 40px 0px;
 }
 
 li{
@@ -73,7 +73,7 @@ img{
 
 .card{
     border: none !important;
-    margin: 10px 0px;
+    margin: 8px 0px;
 }
 
 .button{
