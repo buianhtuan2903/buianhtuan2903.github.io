@@ -94,10 +94,6 @@ img{
     width: fit-content;
 }
 
-.btn{
-    margin: 10px 0;
-}
-
 ul{
     padding: 0 !important ;
 }
@@ -155,4 +151,11 @@ p{
 
 .mdc-card{
     margin: 20px 0px;
+}
+.mdc-button{
+    margin: 5px 0;
+}
+
+.mdc-button:active {
+    border: 0px;
 }
