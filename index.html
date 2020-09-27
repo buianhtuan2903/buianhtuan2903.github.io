@@ -8,49 +8,78 @@
     <title>Bui Anh Tuan - Resume</title>
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap">
+
+
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css" />
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.components.min.css" />
+    <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
+
+    <!-- Required styles for Material Web -->
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+
+    <!-- Required Material Web JavaScript library -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <!-- Instantiate single textfield component rendered in the document -->
+    <script>
+    mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
+    </script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles.css">
+
     <script src="./assets/jquery/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="./assets/bootstrap/bootstrap.min.js"></script> 
-    <script src="https://unpkg.com/eva-icons"></script>
-    <script data-ad-client="ca-pub-7776376416232577" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- <script data-ad-client="ca-pub-7776376416232577" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+    
 </head>
 
 <body>
-    <nav class="navbar bg-dark justify-content-center fixed-top">
+    <nav class="navbar bg-dark fixed-top">
         <ul class="navbar-nav topnav">
-            <li class="nav-item">
-                <a class="nav-link button" rel="noopener noreferrer" href="https://drive.google.com/file/d/1HXRKVGJnfHbbHARmZrftzU00YVcBUVkU/view?usp=sharing">
-                DOWNLOAD CV
-            </a></li>
+            <li class="nav-item">Hello</li>
         </ul>
     </nav>
 
-    <div id="about"></div>
+    
     <div class="content">
         <div class="row">
             <div class="col-md-4">
-                <img src="./assets/BuiAnhTuan_2018.png" alt="avatar" id="avatar">
-                <div class="name">BUI ANH TUAN</div>
-                <div class="card">
-                    <ul class="info-list">
-                        <li><a href="mailto:buianhtuan2903@gmail.com" class="info" rel="noopener noreferrer">
-                            <i data-eva="email" data-eva-fill="#4370C0"></i><span>buianhtuan2903@gmail.com</span>
+                <div class="card" >
+                    <img src="./assets/BuiAnhTuan_2018.png" alt="avatar" id="avatar">
+                        <h5 class="card-title text-center name">BUI ANH TUAN</h5>
+                    <div class="text-center">
+                        <button class="mdc-button mdc-button--raised text-center" >
+                            <a class="nav-link" rel="noopener noreferrer" href="https://drive.google.com/file/d/1HXRKVGJnfHbbHARmZrftzU00YVcBUVkU/view?usp=sharing">
+                                DOWNLOAD CV</a>
+                        </button>
+                        <button class="mdc-button mdc-button--raised text-center" data-toggle="collapse" data-target="#MoreInfo" aria-expanded="false" aria-controls="MoreInfo">
+                                <span class="material-icons">expand_more</span>Contact
+                        </button>
+                    </div>
+                    <div class="mdc-card">
+                    <ul class="info-list list-group list-group-flush collapse text-center" id="MoreInfo">
+                        <li class="list-group-item "><a href="mailto:buianhtuan2903@gmail.com" class="info" rel="noopener noreferrer">
+                            <i class="ms-Icon ms-Icon--Mail" aria-hidden="true"></i><span>buianhtuan2903@gmail.com</span>
                         </a></li>
-                        <li><div class ="info">
-                            <i data-eva="map" data-eva-fill="#4370C0"></i><span>Thu Duc District, HCMC</span>
-                        </div></li>
-                        <li><a href="tel:+84982227965" class="info" rel="noopener noreferrer">
-                            <i data-eva="phone" data-eva-fill="#4370C0"></i><span>(+84) 98 222 7965</span>
+                        <li class="list-group-item"><a href="tel:+84982227965" class="info" rel="noopener noreferrer">
+                            <i class="ms-Icon ms-Icon--CellPhone" aria-hidden="true"></i><span>(+84) 98 222 7965</span>
                         </a></li>
-                        <li><a href="https://www.linkedin.com/in/buianhtuan2903/" class="info" target="_blank" rel="noopener noreferrer">
-                            <i data-eva="linkedin" data-eva-fill="#4370C0"></i><span>linkedin/in/buianhtuan2903</span>
+                        <li class="list-group-item"><a href="https://www.linkedin.com/in/buianhtuan2903/" class="info" target="_blank" rel="noopener noreferrer">
+                            <i class="ms-Icon ms-Icon--LinkedInLogo" aria-hidden="true"></i><span>linkedin/in/buianhtuan2903</span>
                         </a></li>
-                        <li><a href="https://buianhtuan2903.github.io/" class="info" target="_blank" rel="noopener noreferrer">
-                            <i data-eva="browser" data-eva-fill="#4370C0"></i><span>buianhtuan2903.github.io</span>
+                        <li class="list-group-item"><a href="https://buianhtuan2903.github.io/" class="info" target="_blank" rel="noopener noreferrer">
+                            <i class="ms-Icon ms-Icon--Link" aria-hidden="true"></i><span>buianhtuan2903.github.io</span>
+                        </a></li>
+                        <li class="list-group-item"><a href="" class="info" rel="noopener noreferrer">
+                            <i class="ms-Icon ms-Icon--Nav2DMapView" aria-hidden="true"></i><span>Thu Duc District, HCMC</span>
                         </a></li>
                     </ul>
                 </div>
+                </div>
+                    
                 <div class="title">SUMMARY</div>
                 <div class="card">
                     Engineer with 3+ years working in HVM and design field. 
@@ -75,11 +104,21 @@
             </div>
             <div class="col-md-8">
                 <div class="title">EXPERIENCES</div>
-                <div class="card">
+                <div class="mdc-card">
                     <div class="row">
-                        <ul style="padding-left: 0px;">
-                            <li>12.2019-Present<span><strong>Intel Products Vietnam</strong></span></li> 
-                            <li>Process Engineer<span style="font-style: italic;">HCMC, Vietnam</span></li>
+                        <div class="col-sm-6 card-title">Process Engineer
+                            <div style="display: inline-block;">Intel Products Vietnam</div> 
+                            <div>12.2019-Present
+                                <div style="font-style: italic;display: inline-block;">HCMC, Vietnam</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 d-flex align-items-center justify-content-end">
+                        <div class="mdc-icon-button mdc-button--raised text-center" style="display: inline-block; float: right; border-radius: 50%;" data-toggle="collapse" data-target="#Ex1" aria-expanded="false" aria-controls="Ex1">
+                            <span class="material-icons">expand_more</span></div>
+                        </div>
+                    </div>  
+
+                    <div class="card-body collapse" id="Ex1">
                             <li>- Monitor, control and improve process for testing PCB through 
                                 close gap and resolve production issues in HVM.</li>
                             <li>- Statistically analyse data to meet Key Indicator, quality goal, 
@@ -94,12 +133,29 @@
                             <li>Key achievement:</li>
                             <li>- Create dashboard for collaterals performance monitor.<br>
                                 - Increase inventory availability from 82% to 97%.</li>
-                        </ul>
                     </div>
+                </div>
+                
+                <div class="mdc-card">
                     <div class="row">
-                        <ul style="padding-left: 0px;">
-                            <li>11.2018-11.2019<span><strong>Nidec Vietnam R&D Center</strong></span></li> 
-                            <li>R&D Engineer<span style="font-style: italic;">HCMC, Vietnam</span></li>
+                        <div class="col-sm-6 card-title">R&D Engineer
+                            <div style="display: inline-block;">Nidec Vietnam R&D Center</div> 
+                            <div>11.2018-11.2019
+                                <div style="font-style: italic;display: inline-block;">HCMC, Vietnam</div>
+                            </div>
+                            <div style="display: inline-block;">Nidec Global Production Engineering Division</div> 
+                            <div>11.2017-11.2018
+                                <div style="font-style: italic;display: inline-block;">Kyoto, Japan</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 d-flex align-items-center justify-content-end">
+                        <div class="mdc-icon-button mdc-button--raised text-center" style="display: inline-block; float: right; border-radius: 50%;" data-toggle="collapse" data-target="#Ex2" aria-expanded="false" aria-controls="Ex2">
+                            <span class="material-icons">expand_more</span></div>
+                        </div>
+                    </div> 
+                    <div class=" card-body collapse" id="Ex2">
+                            <li>- Design and simulate plastic injection mold (Siemen NX, CAD Doctor, Moldflow).</li>
+                            <li>- Learn tool principles and specifications to improve mold design. </li>
                             <li>- Design product and plastic injection mold for motor components (Solidworks).</li>
                             <li>- Implement new mold production process in Vietnam include 
                                 planning, design, manufacture, quality control and maintenance.</li>
@@ -108,41 +164,45 @@
                             <li>Key achievement: Build C# designing software which decreased 23% total time of design phrase.
                                 <a href="https://github.com/buianhtuan2903/Dieset-Futaba-Solidworks" class="link">Github</a>&nbsp;
                                 <a href="https://drive.google.com/open?id=130ZnFpQrGdk8SB9ExHGNf1L-ANRsmmG4" class="link">Demo</a>.</li>
-                        </ul>
                     </div>
-                    <div class="row">
-                        <ul style="padding-left: 0px;">
-                            <li>11.2017-11.2018<span><strong>Nidec Global Production Engineering Division</strong></span></li>
-                            <li>Design Engineer<span style="font-style: italic;">Kyoto, Japan</span></li>
-                            <li>- Design and simulate plastic injection mold (Siemen NX, CAD Doctor, Moldflow).</li>
-                            <li>- Learn tool principles and specifications to improve mold design. </li>
-                        </ul>
-                    </div>
-                    <div class="row">
-                            <ul style="padding-left: 0px;">
-                                <li>06.2016-08.2016<span><strong>ESI Vietnam</strong></span></li>
-                                <li>CAE Engineer Intern<span style="font-style: italic;">HCMC, Vietnam</span></li>
-                                <li>- Modeling and meshing industrial problems through Visual Mesh.</li>
-                                <li>- Perform crash simulation problems using FEM and Pam Crash.</li>
-                            </ul>
-                        </div>
                 </div>
 
+                <div class="mdc-card">
+                    <div class="row">
+                        <div class="col-sm-6 card-title">CAE Engineer Intern
+                            <div style="display: inline-block;">ESI Vietnam</div> 
+                            <div>06.2016-08.2016
+                                <div style="font-style: italic;display: inline-block;">HCMC, Vietnam</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 d-flex align-items-center justify-content-end">
+                        <div class="mdc-icon-button mdc-button--raised text-center" style="display: inline-block; float: right; border-radius: 50%;" data-toggle="collapse" data-target="#Ex3" aria-expanded="false" aria-controls="Ex3">
+                            <span class="material-icons">expand_more</span></div>
+                        </div>
+                    </div>
+                    <div class="card-body collapse" id="Ex3">
+                            <li>- Modeling and meshing industrial problems through Visual Mesh.</li>
+                            <li>- Perform crash simulation problems using FEM and Pam Crash.</li>
+                    </div>                 
+
+                
+            </div>
+            <div>
                 <div class="title">SKILLS</div>
-                <div class="card" style="    display: inline-block;">
-                    <button type="button" class="btn btn-primary" disabled>Siemens NX</button>
-                    <button type="button" class="btn btn-primary" disabled>Solidworks</button>
-                    <button type="button" class="btn btn-primary" disabled>Moldflow</button>
-                    <button type="button" class="btn btn-primary" disabled>Problem Solving</button>
-                    <button type="button" class="btn btn-primary" disabled>Statistical analysis</button>
-                    <button type="button" class="btn btn-primary" disabled>JMP</button>
-                    <button type="button" class="btn btn-primary" disabled>C#</button>
-                    <button type="button" class="btn btn-primary" disabled>VBA</button>
-                    <button type="button" class="btn btn-primary" disabled>Visual Studio</button>
-                    <button type="button" class="btn btn-primary" disabled>SQL PathFinder</button>
-                    <button type="button" class="btn btn-primary" disabled>English</button>
-                    <button type="button" class="btn btn-primary" disabled>Microsoft Office</button>
-                    <button type="button" class="btn btn-primary" disabled>Power BI</button>
+                <div class="card" style="display: inline-block;">
+                    <button class="btn mdc-button mdc-button--raised text-center" >Siemens NX</button>
+                    <button type="button" class="btn mdc-button mdc-button--raised text-center" >Solidworks</button>
+                    <button type="button" class="btn mdc-button mdc-button--raised text-center" >Moldflow</button>
+                    <button type="button" class="btn mdc-button mdc-button--raised text-center" >Problem Solving</button>
+                    <button type="button" class="btn mdc-button mdc-button--raised text-center" >Statistical analysis</button>
+                    <button type="button" class="btn mdc-button mdc-button--raised text-center" >JMP</button>
+                    <button type="button" class="btn mdc-button mdc-button--raised text-center" >C#</button>
+                    <button type="button" class="btn mdc-button mdc-button--raised text-center" >VBA</button>
+                    <button type="button" class="btn mdc-button mdc-button--raised text-center" >Visual Studio</button>
+                    <button type="button" class="btn mdc-button mdc-button--raised text-center" >SQL PathFinder</button>
+                    <button type="button" class="btn mdc-button mdc-button--raised text-center" >English</button>
+                    <button type="button" class="btn mdc-button mdc-button--raised text-center" >Microsoft Office</button>
+                    <button type="button" class="btn mdc-button mdc-button--raised text-center" >Power BI</button>
                 </div>
             </div>
         </div>
@@ -162,6 +222,24 @@
             </li>
         </ul>      
     </nav>
-    <script>eva.replace()</script>
+    <!-- <script>eva.replace()</script> -->
+
+    <!-- <h1 class="title">Hover over the cards</h1>
+    <div class="content">
+        <div class="row">
+            <div class="col-md-4">
+                <div data-tilt>
+                    <div class="card-img-top"  src="./assets/BuiAnhTuan_2018.png">
+                    <div class="card-body" slot="header">Canyons</div>
+                    <p class="card-text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div></div>
+            </div>
+        </div>
+    </div> -->
+
+
+    
+    <!-- <script src="./assets/jquery/jquery.min.js"></script> -->
+    <script src="tilt.jquery.js"></script>
 </body>
 </html>
