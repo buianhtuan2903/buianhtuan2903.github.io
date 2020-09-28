@@ -16,35 +16,53 @@
     <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
 
     <!-- Required styles for Material Web -->
-    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
-
+    <link rel="stylesheet" href="./assets/mdc/material-components-web.min.css">
     <!-- Required Material Web JavaScript library -->
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="./assets/mdc/material-components-web.min.js"></script>
     <!-- Instantiate single textfield component rendered in the document -->
-    <script>
+    <!-- <script>
     mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
-    </script>
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-   
-    
-
+    </script> -->
+     <link href="./assets/mdc/Material-icon.css" rel="stylesheet">
 
     <script src="./assets/jquery/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="./assets/bootstrap/bootstrap.min.js"></script> 
     <!-- <script data-ad-client="ca-pub-7776376416232577" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script> -->
     
 </head>
 
 <body>
-    <nav class="navbar bg-dark fixed-top">
+    <!-- <nav class="navbar bg-dark fixed-top">
         <ul class="navbar-nav topnav">
             <li class="nav-item">Hello</li>
         </ul>
-    </nav>
+    </nav> -->
 
+      <div class="navbar navbar-expand-md bg-dark mb-4">
+        <!-- <a class="navbar-brand" href="#">Top navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#skill">About</a>
+                <a class="nav-link" href="#skill">Experiences</a>
+                <a class="nav-link" href="#skill">Projects</a>
+                <a class="nav-link" href="#skill">Contact</a>
+                <div class="mdc-button mdc-button--raised" style="margin: 0 0 !important; height: 35px;" >
+                    <a class="nav-link" rel="noopener noreferrer" href="https://drive.google.com/file/d/1HXRKVGJnfHbbHARmZrftzU00YVcBUVkU/view?usp=sharing">
+                        DOWNLOAD CV</a>
+                </div>
+          </ul>
+          <!-- <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
     
     <div class="content">
         <div class="row">
@@ -192,7 +210,7 @@
                 
             </div>
             <div>
-                <div class="title">SKILLS</div>
+                <div class="title" id="skill">SKILLS</div>
                 <div class="card" style="display: inline-block;">
                     <div class=" mdc-button mdc-button--raised " >Siemens NX</div>
                     <div class=" mdc-button mdc-button--raised " >Solidworks</div>
@@ -213,20 +231,15 @@
 
     </div>
    
-    <nav class="navbar justify-content-center fixed-bottom bg-dark">
-        <ul class="navbar-nav nav-fill w-100">
-            <li class="nav-item">
-                <a class="nav-link" href="#about">CONTACT</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#experiences">EXPERIENCES</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#bottom">BOTTOM</a>
-            </li>
+    
+    </div>
+    <div class="navbar justify-content-center bg-dark">
+        <ul class="navbar-nav d-flex justify-content-center flex-row ">
+                <a class="nav-bottom" href="#about">CONTACT</a>
+                <a class="nav-bottom" href="#experiences">EXPERIENCES</a>
+                <a class="nav-bottom" href="#bottom">BOTTOM</a>
         </ul>      
-    </nav>
-
+    </div>  
     <!-- <script src="./assets/jquery/jquery.min.js"></script> -->
     <!-- <script src="tilt.jquery.js"></script> -->
 </body>

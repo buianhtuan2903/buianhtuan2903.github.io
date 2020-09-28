@@ -7,11 +7,6 @@
     
 }
 
-.navbar-nav {
-    flex-direction: row !important;
-    max-width: 500px !important;
-}
-
 #avatar{
     height: 200px;
     border-radius: 50%;
@@ -24,8 +19,16 @@
     padding: 0px 5px;
 }
 
-.nav-link{
+.nav-link, .nav-link:hover{
     color: white;
+    padding: 0.5rem 1rem !important;
+    /* font-size: 16px; */
+}
+
+.nav-bottom, .nav-bottom:hover{
+    color: white;
+    padding: 0.5rem 1rem;
+    /* font-size: 16px; */
 }
 
 .content{
@@ -107,7 +110,7 @@ i{
 a{
     text-decoration: none;
     color: black;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 a:hover, a:active {
