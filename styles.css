@@ -15,10 +15,6 @@
     border: 6px solid #4370C0;
 }
 
-.topnav > .nav-item{
-    padding: 0px 5px;
-}
-
 .nav-link, .nav-link:hover{
     color: white;
     padding: 0.5rem 1rem !important;
@@ -29,6 +25,10 @@
     color: white;
     padding: 0.5rem 1rem;
     /* font-size: 16px; */
+}
+
+.navbar-toggler{
+    color: white !important;
 }
 
 .content{
