@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Bui Anh Tuan porfolio website - Bui Anh Tuan Resume - Bui Anh Tuan CV">
-    <title>Bui Anh Tuan - Resume</title>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap">
+    <title>Bui Anh Tuan | Porfolio</title>
+    <link rel="icon" href="./assets/img/favicon.svg" type="image/ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"> 
-    <link rel="stylesheet" href="./styles.css">
-
-    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css" />
-    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.components.min.css" />
-    <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
+    <link rel="stylesheet" href="./assets/styles.css">
 
     <!-- Required styles for Material Web -->
     <link rel="stylesheet" href="./assets/mdc/material-components-web.min.css">
@@ -23,49 +19,44 @@
     <!-- <script>
     mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
     </script> -->
-     <link href="./assets/mdc/Material-icon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/mdc/Material-icon.css">
+
+    <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <script src="./assets/jquery/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="./assets/bootstrap/bootstrap.min.js"></script> 
-    <!-- <script data-ad-client="ca-pub-7776376416232577" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script> -->
+    <script src="./assets/bootstrap/bootstrap.min.js"></script>
+ 
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
     
 </head>
 
 <body>
-    <!-- <nav class="navbar bg-dark fixed-top">
-        <ul class="navbar-nav topnav">
-            <li class="nav-item">Hello</li>
-        </ul>
-    </nav> -->
-
-      <div class="navbar navbar-expand-md bg-dark">
-        <!-- <a class="navbar-brand" href="#">Top navbar</a> -->
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i>
-            <!-- <span class="navbar-toggler-icon"></span> -->
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-                <a class="nav-link" href="#">Home</a>
-                <a class="nav-link" href="#skill">About</a>
-                <a class="nav-link" href="#skill">Experiences</a>
-                <a class="nav-link" href="#skill">Projects</a>
-                <a class="nav-link" href="#skill">Contact</a>
-                <div class="mdc-button mdc-button--raised" style="margin: 0 0 !important; height: 35px;" >
-                    <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1HXRKVGJnfHbbHARmZrftzU00YVcBUVkU/view?usp=sharing">
-                        DOWNLOAD CV</a>
-                </div>
-          </ul>
+    <div class="navbar navbar-expand-md bg-dark fixed-top">
+        <div class="container">
+            <a href="#">
+                <!-- <img src="#" alt="logo" class="logo-img"> -->
+                <div class="logo text-white">Bui Anh Tuan</div></a>
+            <div class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+                <div class="material-icons">menu</div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto justify-content-center">
+                    <a class="nav-link px-3" href="#">Home</a>
+                    <a class="nav-link px-3" href="#">Info</a>
+                    <a class="nav-link px-3" href="#project">Projects</a>
+                    <a class="nav-link btn px-auto" id="download-color" target="_blank" rel="noopener noreferrer" 
+                    href="https://drive.google.com/file/d/1HXRKVGJnfHbbHARmZrftzU00YVcBUVkU/view?usp=sharing">Download CV</a>
+                </ul>
+            </div>
         </div>
-      </div>
+    </div>
     
     <div class="content">
+        <div class="container my-5 py-4">
         <div class="row">
             <div class="col-md-4">
-                <div class="card" >
-                    <img src="./assets/BuiAnhTuan_2018.png" alt="avatar" id="avatar">
+                <div class="card">
+                    <img src="./assets/img/profilepicture.png" alt="avatar" id="avatar" >
                         <h5 class="card-title text-center name">BUI ANH TUAN</h5>
                     <div class="text-center">
                         <div class="mdc-button mdc-button--raised " >
@@ -227,29 +218,68 @@
                 </div>
             </div>
 
-        </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-8">
-
             </div>
         </div>
-  
-        <div class="row">
-
+          
+        <div id="project" class="py-5 border-bottom">
+            <div class="container">
+                <div class="title">PROJECTS</div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card mb-4" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.2">
+                            <div class="card-header">Automation mold design</div>
+                            <div class="card-body">                        
+                                <div class="py-2 text-center">Free to join</div>
+                                <div class="py-2 text-center">Free to use</div>
+                                <div class="py-2 text-center">Always on top</div>
+                                <div class="py-2 text-center">Share with friends</div>
+                                <div class="heading py-3 text-center">FREE</div>
+                                <div class="btn btn-price justify-content-center mb-3">Choose</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-4" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.2">
+                            <div class="card-header">Full stack dev projects</div>
+                            <div class="card-body">                        
+                                <div class="py-2 text-center">Porfolio</div>
+                                <div class="py-2 text-center">Basic landing page</div>
+                                <div class="py-2 text-center">Basic app</div>
+                                <!-- <div class="heading py-3 text-center">$4.99</div> -->
+                                <div class="btn btn-price justify-content-center mb-3">Choose</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-4" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.2">
+                            <div class="card-header">MANAGEMENT</div>
+                            <div class="card-body ">                        
+                                <div class="py-2 text-center">Copy trade</div>
+                                <div class="py-2 text-center">Best investment</div>
+                                <div class="py-2 text-center">24/24 support</div>
+                                <div class="py-2 text-center">Getting on time</div>
+                                <!-- <div class="heading py-3 text-center">$9.99</div> -->
+                                <div class="btn btn-price justify-content-center text-center mb-3">Choose</div>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
+    </div>
     </div>
 
-    <div class="navbar justify-content-center bg-dark">
-        <ul class="navbar-nav d-flex justify-content-center flex-row ">
-                <a class="nav-bottom" href="#about">CONTACT</a>
-                <a class="nav-bottom" href="#experiences">EXPERIENCES</a>
-                <a class="nav-bottom" href="#bottom">BOTTOM</a>
+
+
+
+    <div class="navbar navbar-expand-md bg-dark">
+        <ul class="navbar-nav mx-auto justify-content-center flex-row ">
+                <a class="nav-link" href="#about">INFO</a>
+                <a class="nav-link" href="#experiences">EXPERIENCES</a>
+                <a class="nav-link" href="#bottom">BOTTOM</a>
         </ul>      
-    </div>  
-    <!-- <script src="./assets/jquery/jquery.min.js"></script> -->
-    <!-- <script src="tilt.jquery.js"></script> -->
+    </div>
+
+    <script src="./assets//tiltjs/vanilla-tilt.min.js"></script>
 </body>
 </html>
