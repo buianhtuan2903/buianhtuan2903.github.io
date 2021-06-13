@@ -67,7 +67,7 @@ li{
 }
 
 .heading{
-    color: #1e1e22;
+    color: #4370C0;
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
@@ -190,12 +190,10 @@ li{
     position: absolute;
     left: 0;
     width: 100%;
-    height: 100%;
   }
   
   .rain.back-row {
     display: none;
-    z-index: 1;
     bottom: 60px;
     opacity: 0.5;
   }
