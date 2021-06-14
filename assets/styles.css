@@ -63,7 +63,6 @@ li{
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 10px;
 }
 
 .heading{
@@ -71,7 +70,6 @@ li{
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    padding: 1rem 0;
 }
 
 .title{
@@ -94,7 +92,7 @@ li{
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
     animation: flow-animate 25s linear infinite;
-    bottom: -10px;
+    bottom: -300px;
 }
 
 .circles-animation li:nth-child(1){
@@ -179,7 +177,7 @@ li{
         border-radius: 0;
     }
     100%{
-        transform: translateY(-1000px) rotate(720deg);
+        transform: translateY(-1300px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
     }
@@ -386,7 +384,7 @@ li{
 }
 
 .card-body .btn{
-    transform: translateZ(30px);
+    /* transform: translateZ(30px); */
 }
 
 .card-header{
@@ -401,6 +399,7 @@ li{
     background-color: #e9e9e9;
     font-weight: 700;
     font-size: 1.2rem;
+    display:inline-flex;
 }
 
 .card:hover{
