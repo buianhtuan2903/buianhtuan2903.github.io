@@ -3,7 +3,7 @@
     overflow-wrap: break-word;
     font-size: 16px;
     scroll-behavior: smooth;
-    font-family: 'Roboto', sans-serif;     
+    font-family: 'Roboto', sans-serif; 
 }
 
 a, a:link, a:hover{
@@ -49,7 +49,7 @@ li{
 }
 
 #download-color{
-    background-color: #4370C0;
+    background-color: #406BB8;
     color: white;
     justify-content: center;
 }
@@ -60,23 +60,42 @@ li{
 }
 
 .landing-title{
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .heading{
-    color: #4370C0;
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
+  color: #406BB8;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
 }
 
-.title{
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-align: center;
-    color: #4370C0;
+.title , .title >a , .title >a:hover{
+  font-weight: 700;
+  text-align: center;
+  color: #406BB8;
+}
+
+/* Content */
+#avatar{
+  height: 260px;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+  /* border: 6px solid #0E1623; */
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  height: 36px;
+  justify-content: center;
+}
+
+.info-list{
+  padding-left: 20px;
 }
 
 /* Background animate circle */
@@ -106,7 +125,7 @@ li{
     left: 10%;
     width: calc(100vw/34);
     height: calc(100vw/34);
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-duration: 12s;
 }
 
@@ -114,15 +133,15 @@ li{
     left: 60%;
     width: calc(100vw/30);
     height: calc(100vw/30);
-    animation-delay: 4s;
+    animation-delay: 2s;
 }
 
 .circles-animation li:nth-child(4){
     left: 50%;
     width: calc(100vw/32);
     height: calc(100vw/32);
-    animation-delay: 5s;
-    animation-duration: 18s;
+    animation-delay: 4s;
+    animation-duration: 14s;
 }
 
 .circles-animation li:nth-child(5){
@@ -130,28 +149,29 @@ li{
     width: calc(100vw/8);
     height: calc(100vw/8);
     animation-delay: 0s;
+    animation-duration: 12s;
 }
 
 .circles-animation li:nth-child(6){
     left: 75%;
     width: calc(100vw/26);
     height: calc(100vw/26);
-    animation-delay: 8s;
+    animation-delay: 3s;
 }
 
 .circles-animation li:nth-child(7){
     left: 35%;
     width: calc(100vw/16);
     height: calc(100vw/16);
-    animation-delay: 2s;
+    animation-delay: 2.2s;
 }
 
 .circles-animation li:nth-child(8){
     left: 55%;
     width: calc(100vw/14);
     height: calc(100vw/14);
-    animation-delay: 5s;
-    animation-duration: 45s;
+    animation-delay: 1s;
+    animation-duration: 40s;
 }
 
 .circles-animation li:nth-child(9){
@@ -159,7 +179,7 @@ li{
     width: calc(100vw/10);
     height: calc(100vw/10);
     animation-delay: 2s;
-    animation-duration: 35s;
+    animation-duration: 30s;
 }
 
 .circles-animation li:nth-child(10){
@@ -337,97 +357,167 @@ li{
     display: block;
   }
 
-/* Content */
-#avatar{
-    height: 260px;
-    border-radius: 50%;
-    margin: auto;
-    display: block;
-    /* border: 6px solid #0E1623; */
-}
-
-.name{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    color: #4370C0;
-    margin: 10px 0;
-}
-
-.icon{
-    height: 30px;
-}
-
-.button{
-    background-color: white;
-    border-radius: 2px;
-    color: #4370C0 !important;
-    font-weight: 700;
-    text-align: center;
-    width: fit-content;
-}
-
-.info{
-    display: flex;
-    align-items: center;
-    height: 36px;
-    justify-content: center;
-}
-
-.info-list{
-    padding-left: 20px;
+/* Experience */
+/* #experience{
+  background-color:#0E1623;
+} */
+.btn-expand , .btn-expand:hover{
+  background-color: #406BB8;
+  color: white;
+  display: flex;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 /* Project */
 .card{
-    transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  border: 1px solid #e9e9e9;
 }
 
-.card-body .btn{
-    /* transform: translateZ(30px); */
-}
+/* .card-body .btn{
+    transform: translateZ(30px);
+} */
 
 .card-header{
     text-align: center;
     padding: 1rem 0;
     font-weight: 700;
     color: white;
-    background-color: #4370C0;
+    background-color: #406BB8;
 }
 
 .btn-price{
-    background-color: #e9e9e9;
-    font-weight: 700;
-    font-size: 1.2rem;
-    display:inline-flex;
+  background-color: #e9e9e9;
+  font-weight: 700;
+  font-size: 1.2rem;
+  display:inline-flex;
+  border: none;
 }
 
-.card:hover{
-    box-shadow: 0px 2px 20px rgba(0,0,0,0.2);
-    -webkit-box-shadow: 0px 2px 20px rgba(0,0,0,0.2);
-    -o-box-shadow: 0px 2px 20px rgba(0,0,0,0.2);
-    -ms-box-shadow: 0px 2px 20px rgba(0,0,0,0.2);
+/* Skill */
+.btn-skill , .btn-skill:hover{
+  background-color: #406BB8;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1.25px;
+  border: none;
 }
 
-.card:hover .btn-price{
-    background-color: #4370C0;
-    color: white;
-    font-weight: 700;
-    font-size: 1.2rem;
+.btn-skill , .btn-price{
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+  -o-box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+  -ms-box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
 }
 
-/* MDC */
-.list-group-item{
-    padding: 5px 5px;
+.card:hover , .btn-price:hover, .btn-skill:hover{
+  box-shadow: 0px 2px 14px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 2px 14px rgba(0,0,0,0.2);
+  -o-box-shadow: 0px 2px 14px rgba(0,0,0,0.2);
+  -ms-box-shadow: 0px 2px 14px rgba(0,0,0,0.2);
 }
 
-.mdc-card{
-    margin: 20px 0px;
-}
-.mdc-button{
-    margin: 5px 0;
+.card-body > div > .btn-price:hover{
+  background-color: #406BB8;
+  color: white;
 }
 
-.mdc-button:active {
-    border: 0px;
+/* Timeline */
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #406BB8;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+/* Container around content */
+.container-left{
+  padding: 10px 40px;
+  position: relative;
+  background-color:#e9e9e9;
+  width: 50%;
+  left: 0;
+}
+
+/* Place the container to the right */
+.container-right {
+  background-color: #e9e9e9;
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+  left: 50%;
+}
+
+/* The circles on the timeline */
+.container-left::after , .container-right::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background-color: white;
+  border: 2px solid #406BB8;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Fix the circle for containers on the right side */
+.container-right::after {
+  left: -10px;
+}
+
+/* The actual content */
+.c-content {
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container-left, .container-right {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container-left::before , .container-left::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .container-left::after, .container-right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .container-right {
+  left: 0%;
+  }
 }
