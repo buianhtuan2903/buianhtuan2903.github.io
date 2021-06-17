@@ -110,12 +110,22 @@ li{
 .title , .title:hover{
   font-size: 1.2rem;
   font-weight: 500;
-  color: #406BB8;
+  color: #406BB8 !important;
+}
+
+.title-strong , .title-strong:hover{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #406BB8 !important;
 }
 
 .title-location{
   color: #406BB8;
   font-style: italic;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 /* Background animate circle */
@@ -385,7 +395,7 @@ li{
   background-color: #406BB8;
   color: white;
   display: flex;
-  padding: 0.8rem;
+  padding: 0.5rem;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -466,30 +476,11 @@ li{
   background-color: #406BB8;
   top: 0;
   bottom: 0;
-  left: 50%;
-  margin-left: -1px;
-}
-
-/* Container around content */
-.container-left{
-  /* padding: 10px 40px; */
-  /* position: relative; */
-  /* background-color:#e9e9e9; */
-  /* width: 50%;  */
-  /* left: 0; */
-}
-
-/* Place the container to the right */
-.container-right {
-  /* background-color: #e9e9e9; */
-  /* padding: 10px 40px; */
-  /* position: relative; */
-  /* width: 50%; */
-  /* left: 50%; */
+  left: calc(50% - 1px);
 }
 
 /* The circles on the timeline */
-.container-left::after , .container-right::after {
+.timeline-left::after , .timeline-right::after {
   content: '';
   position: absolute;
   width: 20px;
@@ -497,44 +488,30 @@ li{
   right: -10px;
   background-color: white;
   border: 2px solid #406BB8;
-  top: 15px;
+  top: calc(1rem + 4px);
   border-radius: 50%;
   z-index: 1;
 }
 
 /* Fix the circle for containers on the right side */
-.container-right::after {
+.timeline-right::after {
   left: -10px;
 }
 
-/* The actual content */
-.c-content {
-  padding: 20px 30px;
-  background-color: white;
-  border-radius: 6px;
-}
-
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   /* Place the timelime to the left */
   .timeline::after {
-  left: 31px;
-  }
-  
-  /* Full-width containers */
-  .container-left, .container-right {
-  width: 100%;
-  /* padding-left: 70px; */
-  /* padding-right: 25px; */
+  left: 0.4rem;
   }
 
   /* Make sure all circles are at the same spot */
-  .container-left::after, .container-right::after {
-  left: 21px;
+  .timeline-left::after, .timeline-right::after {
+  left: calc(0.4rem - 10px) !important;
   }
   
   /* Make all right containers behave like the left ones */
-  .container-right {
+  /* .timeline-right {
   left: 0%;
-  }
+  } */
 }
