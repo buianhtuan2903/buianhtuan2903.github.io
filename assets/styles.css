@@ -507,7 +507,7 @@ li{
 
   /* Make sure all circles are at the same spot */
   .timeline-left::after, .timeline-right::after {
-  left: calc(0.4rem - 10px) !important;
+  left: calc(0.4rem - 9px) !important;
   }
   
   /* Make all right containers behave like the left ones */
