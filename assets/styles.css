@@ -1,59 +1,59 @@
 *{
-    box-sizing: border-box;
-    overflow-wrap: break-word;
-    font-size: 16px;
-    scroll-behavior: smooth;
-    font-family: 'Rubik', sans-serif; 
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  font-family: 'Rubik', sans-serif; 
 }
 
 a, a:link, a:hover{
-    text-decoration: none;  
+  text-decoration: none;  
 }
 
 .row{
-    margin: 0px;
+  margin: 0px;
 }
 
 ul{
-    padding: 0 !important ;
+  padding: 0 !important ;
 }
 
 li{
-    list-style: none;
+  list-style: none;
 }
 
 .material-icons{
-    font-size: 24px !important;
+  font-size: 24px !important;
 }
 
 .btn{
-    display: flex;
+  display: flex;
 }
 /* Navbar */
 .navbar{
-    background-color: #0E1623;;
-    color: white;
+  background-color: #0E1623;;
+  color: white;
 }
 
 .logo{
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .show > ul > .nav-link, .collapsing > ul > .nav-link{
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 #download-color{
-    background-color: #406BB8;
-    color: white;
-    justify-content: center;
-    width: fit-content;
+  background-color: #406BB8;
+  color: white;
+  justify-content: center;
+  width: fit-content;
 }
 
 /* Landing */
 .nav-link, .nav-item, .info{
-  color: rgba(255, 255, 255,0.5);
+  color: rgba(255, 255, 255,0.6);
   justify-content: center;
   align-self: center;
 }
@@ -65,19 +65,20 @@ li{
 .info{
   display: flex;
   justify-content: center;
+  margin: 1.1rem;
 }
 
 #avatar{
-  height: 260px;
+  height: 15rem;
   border-radius: 50%;
   margin: auto;
   display: block;
 }
 
 #landing{
-    background-color:#0E1623;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+  background-color:#0E1623;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
 }
 
 #project{
@@ -94,6 +95,7 @@ li{
   text-align: center;
   font-size: 3.4rem;
   font-weight: 500;
+  margin: 2rem 0;
 }
 
 .landing-text{
@@ -406,10 +408,6 @@ li{
   transform-style: preserve-3d;
   border: 1px solid #e9e9e9;
 }
-
-/* .card-body .btn{
-    transform: translateZ(30px);
-} */
 
 .card-header{
     text-align: center;
