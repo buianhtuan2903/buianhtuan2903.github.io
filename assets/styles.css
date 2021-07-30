@@ -142,8 +142,8 @@ li{
     width: 20px;
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
-    animation: flow-animate 25s linear infinite;
-    bottom: -300px;
+    animation: flow-animate 10s linear infinite;
+    bottom: -34rem;
 }
 
 .circles-animation li:nth-child(1){
