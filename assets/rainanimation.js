@@ -11,9 +11,9 @@ var makeItRain = function() {
       //random number between 98 and 1
       var randoHundo = (Math.floor(Math.random() * (98 - 2 + 1) + 1));
       //random number between 5 and 2
-      var randoFiver = (Math.floor(Math.random() * (2 - 2 + 1) + 4));
+      var randoFiver = (Math.floor(Math.random() * (2 - 2 + 1) + 2));
       //increment
-      increment += (Math.floor(Math.random() * (40) + 1));
+      increment += (Math.floor(Math.random() * (34) + 1));
       if(increment > 100){
         increment = 97; 
       }
