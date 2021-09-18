@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Bui Anh Tuan portfolio website - Bui Anh Tuan Resume - Bui Anh Tuan CV">
     <title>Bui Anh Tuan | Portfolio</title>
     <link rel="icon" href="./assets/img/favicon.svg" type="image/ico"/>
@@ -39,13 +38,13 @@
               <div class="material-icons">menu</div>
           </div>
           <div class="collapse navbar-collapse" id="navbar">
-              <ul class="navbar-nav ml-auto justify-content-center">
-                <div class="nav-link px-3"><a class="nav-item" href="#experience">Experiences</a></div>
-                <div class="nav-link px-3"><a class="nav-item" href="#project">Projects</a></div>
-                <div class="nav-link px-3"><a class="btn nav-link px-2 mx-auto" id="download-color" target="_blank" rel="noopener noreferrer" 
+              <div class="navbar-nav ml-auto justify-content-center">
+                <div class="nav-link px-3"><div class="nav-item cursor-pointer" onclick="experience()">Experiences</div></div>
+                <div class="nav-link px-3"><div class="nav-item cursor-pointer" onclick="project()">Projects</div></div>
+                <div class="nav-link px-3"><a class="btn nav-link px-2 mx-auto main-color" target="_blank" rel="noopener noreferrer" 
                   href="https://drive.google.com/file/d/1-IO8KU7Pka2poRzrDD9Lxn9Rm38TcrYX/view?usp=sharing">Download CV</a></div>
 
-              </ul>
+              </div>
           </div>
       </div>
     </div>
@@ -66,7 +65,7 @@
         <li></li>
         <li></li>
       </ul>
-      <div class="container pt-3 pb-5">
+      <div class="container pt-3 pb-5" >
         <div class="row">
             <div class="col-lg-4">
                 <img src="./assets/img/profilepicture.png" alt="avatar" id="avatar" class="mb-4">
@@ -86,7 +85,7 @@
               <div class="landing-text">I'm an engineer experiences working in high volume manufacturing and mechanical design field. <br>
                 Study and freelance as Web developer from 2018. <br>
                 Seeking technical and management leverage, especially in production and automation development.
-              <a class="btn my-5 mx-auto" id="download-color" rel="noopener noreferrer" target="blank" 
+              <a class="btn my-5 mx-auto main-color justify-content-center" rel="noopener noreferrer" target="blank" 
               href="https://drive.google.com/file/d/1-IO8KU7Pka2poRzrDD9Lxn9Rm38TcrYX/view?usp=sharing">DOWNLOAD CV</a>
             </div>
         </div>
@@ -184,16 +183,16 @@
     </div>
 
     <div id="project" class=" bg-light py-5">
-        <div class="container">
+        <div class="container" >
             <div class="heading py-4">PROJECTS</div>
             <div class="row">
                 <div class="col-xl-4">
-                    <div class="card mb-4 zoom" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
+                    <div class="card mb-4 zoom shadow" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
                         <div class="card-header">Automation mold design</div>
                         <div class="card-body">                        
                             <div class="py-2">Application to automation mold design 3D in Solidworks 2018 for mechanical engineer</div>
                             <div class="py-2">Stack: C# + Solidworks 2018</div>
-                            <img class="py-2 w-100" src="./assets/img/running.gif">
+                            <img class="py-2 w-100" src="./assets/img/running.gif" alt="demo-run">
                             <div class="py-2 text-center">
                                 <a class="btn btn-price justify-content-center m-2"
                                 href="https://github.com/buianhtuan2903/AutomationDesignSolidwork" target="_blank" rel="noopener noreferrer">
@@ -206,7 +205,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4">
-                    <div class="card mb-4 zoom" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
+                    <div class="card mb-4 zoom shadow" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
                         <div class="card-header">Front-end web developer</div>
                         <div class="card-body">
                             <!-- <div class="heading py-3 text-center">$9.99</div> -->
@@ -232,7 +231,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4">
-                    <div class="card mb-4 zoom" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
+                    <div class="card mb-4 zoom shadow" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
                       <div class="card-header">Full stack web developer</div>
                       <div class="card-body">                        
                           <div class="py-2">Web app to manage team and workspace similar to Microsoft Teams</div>
@@ -255,33 +254,33 @@
 
     <div id="skill" class="py-5">
       <div class="container">
-        <div class="heading py-4" id="skill">SKILLS</div>
+        <div class="heading py-4">SKILLS</div>
         <div class="row">
-          <a class="btn btn-skill jusify-content-center m-2" target="_blank" rel="noopener noreferrer"
+          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=Siemens+NX">SIEMENS NX</a>
-          <a class="btn btn-skill jusify-content-center m-2" target="_blank" rel="noopener noreferrer"
+          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=Solidworks">SOLIDWORKS</a>
-          <a class="btn btn-skill jusify-content-center m-2" target="_blank" rel="noopener noreferrer"
+          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=Abaqus">ABAQUS</a>
-          <a class="btn btn-skill jusify-content-center m-2" target="_blank" rel="noopener noreferrer"
+          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=Moldflow">MOLDFLOW</a>
-          <a class="btn btn-skill jusify-content-center m-2" target="_blank" rel="noopener noreferrer"
+          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=JMP">JMP</a>
-          <a class="btn btn-skill jusify-content-center m-2" target="_blank" rel="noopener noreferrer"
+          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=PowerBI">POWER BI</a>
-          <a class="btn btn-skill jusify-content-center m-2" target="_blank" rel="noopener noreferrer"
+          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=C#">C#</a>
-          <a class="btn btn-skill jusify-content-center m-2" target="_blank" rel="noopener noreferrer"
+          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=VBA">VBA</a>
-          <a class="btn btn-skill jusify-content-center m-2" target="_blank" rel="noopener noreferrer"
+          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=Visual+Studio+Code">VISUAL STUDIO</a>
-          <a class="btn btn-skill jusify-content-center m-2" target="_blank" rel="noopener noreferrer"
+          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=HTML+CSS+JS">HTML CSS JS</a>
-          <a class="btn btn-skill jusify-content-center m-2" target="_blank" rel="noopener noreferrer"
+          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=Angular">ANGULAR</a>
-          <a class="btn btn-skill jusify-content-center m-2" href="#">ENGLISH</a>
-          <a class="btn btn-skill jusify-content-center m-2" href="#">OFFICE</a>
-          <a class="btn btn-skill jusify-content-center m-2" href="#">PROBLEM SOLVING</a>
+          <a class="btn btn-skill jusify-content-center m-2 shadow" href="#">ENGLISH</a>
+          <a class="btn btn-skill jusify-content-center m-2 shadow" href="#">OFFICE</a>
+          <a class="btn btn-skill jusify-content-center m-2 shadow" href="#">PROBLEM SOLVING</a>
         </div>
       </div>
     </div>
@@ -316,12 +315,50 @@
     </div>
 
     <div class="navbar navbar-expand-md">
-      <ul class="navbar-nav mx-auto flex-row">
+      <div class="navbar-nav mx-auto flex-row">
         <a href="#landing" class="text-center text-white flex-column"><div class="material-icons">keyboard_arrow_up</div><div>Home</div></a>
-      </ul>      
+      </div>      
     </div>
     <script src="./assets//tiltjs/vanilla-tilt.min.js"></script>
     <script src="./assets/rainanimation.js"></script>
+
+
+
+    <script>
+      function experience(){
+        document.getElementById("experience").scrollIntoView({behavior:"smooth"});
+        document.getElementById("experience").animate([
+            { 
+              opacity: 0,
+              transform: 'translateY(-20px)'
+            },
+            {
+              opacity: 1,
+              easing: 'ease-out',
+              transform: 'translateY(0)',
+            }
+          ], {
+            duration: 800,
+          })
+      }
+
+      function project(){
+        document.getElementById("project").scrollIntoView({behavior:"smooth"});
+        document.getElementById("project").animate([
+            { 
+              opacity: 0,
+              transform: 'translateY(-20px)'
+            },
+            {
+              opacity: 1,
+              easing: 'ease-out',
+              transform: 'translateY(0)',
+            }
+          ], {
+            duration: 800,
+          })
+      }
+    </script>
 
     <script>
       if (window.screen.width < 992 ) {

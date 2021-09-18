@@ -28,7 +28,15 @@ li{
 
 .btn{
   display: flex;
+  width: fit-content;
+  width: -moz-fit-content;
 }
+
+.main-color{
+  background-color: #406BB8;
+  color: white;
+}
+
 /* Navbar */
 .navbar{
   background-color: #0E1623;;
@@ -44,12 +52,7 @@ li{
   text-align: center;
 }
 
-#download-color{
-  background-color: #406BB8;
-  color: white;
-  justify-content: center;
-  width: fit-content;
-}
+
 
 /* Landing */
 .nav-link, .nav-item, .info{
@@ -404,9 +407,38 @@ li{
 }
 
 /* Project */
+#project{
+  background: white no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+}
+
+
 .card{
   transform-style: preserve-3d;
-  border: 1px solid #e9e9e9;
+  border: 1px solid #ececec;
+}
+
+.card {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(20px);
+  margin: -20px;
 }
 
 .card-header{
@@ -440,20 +472,6 @@ li{
   font-size: 14px;
   letter-spacing: 1.25px;
   border: none;
-}
-
-.btn-skill , .btn-price{
-  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
-  -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
-  -o-box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
-  -ms-box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
-}
-
-.card:hover , .btn-price:hover, .btn-skill:hover{
-  box-shadow: 0px 2px 14px rgba(0,0,0,0.2);
-  -webkit-box-shadow: 0px 2px 14px rgba(0,0,0,0.2);
-  -o-box-shadow: 0px 2px 14px rgba(0,0,0,0.2);
-  -ms-box-shadow: 0px 2px 14px rgba(0,0,0,0.2);
 }
 
 .card-body > div > .btn-price:hover{
@@ -518,4 +536,26 @@ li{
   /* .timeline-right {
   left: 0%;
   } */
+}
+
+/* Loading effect */
+.container {
+  -webkit-animation: fadein ease-out 0.8s; 
+     -moz-animation: fadein ease-out 0.8s;
+          animation: fadein ease-out 0.8s;
+}
+
+@keyframes fadein {
+  0% { transform: translateY(-20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+  0% { transform: translateY(-20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  0% { transform: translateY(-20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
 }
