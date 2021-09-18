@@ -146,7 +146,7 @@ li{
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
     animation: flow-animate 10s linear infinite;
-    bottom: -34rem;
+    bottom: -50rem;
 }
 
 .circles-animation li:nth-child(1){
@@ -232,7 +232,7 @@ li{
         border-radius: 0;
     }
     100%{
-        transform: translateY(-1300px) rotate(720deg);
+        transform: translateY(-50rem) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
     }

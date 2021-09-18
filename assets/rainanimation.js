@@ -6,16 +6,16 @@ var makeItRain = function() {
     var drops = "";
     var backDrops = "";
   
-    while (increment < 93) {
+    while (increment < 90) {
       //couple random numbers to use for various randomizations
       //random number between 98 and 1
-      var randoHundo = (Math.floor(Math.random() * (98 - 1 + 1) + 1));
+      var randoHundo = (Math.floor(Math.random() * (98 - 2 + 1) + 1));
       //random number between 5 and 2
-      var randoFiver = (Math.floor(Math.random() * (2 - 2 + 1) + 2));
+      var randoFiver = (Math.floor(Math.random() * (2 - 2 + 1) + 4));
       //increment
-      increment += (Math.floor(Math.random() * (28 - 1 + 1) + 1));
+      increment += (Math.floor(Math.random() * (40) + 1));
       if(increment > 100){
-        increment = 98; 
+        increment = 97; 
       }
       //add in a new raindrop with various randomizations to certain CSS properties
       drops += '<div class="drop" style="left: ' + increment + '%; top: ' + (randoFiver - 200) + 'px; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.' + randoHundo + 's;"></div></div>';
