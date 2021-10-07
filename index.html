@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div class="navbar navbar-expand-md">
+    <div class="navbar navbar-expand-md" id="top">
       <div class="container">
           <a href="https://buianhtuan2903.github.io/">
               <div class="logo text-white">Bui Anh Tuan</div></a>
@@ -28,11 +28,10 @@
           </div>
           <div class="collapse navbar-collapse" id="navbar">
               <div class="navbar-nav ml-auto justify-content-center">
-                <div class="nav-link px-3"><div class="nav-item cursor-pointer" onclick="experience()">Experiences</div></div>
-                <div class="nav-link px-3"><div class="nav-item cursor-pointer" onclick="project()">Projects</div></div>
+                <div class="nav-link px-3"><a class="nav-item cursor-pointer" href="#experience">Experiences</a></div>
+                <div class="nav-link px-3"><a class="nav-item cursor-pointer" href="#project">Projects</a></div>
                 <div class="nav-link px-3"><a class="btn nav-link mx-auto px-2 main-color font-500" target="_blank" rel="noopener noreferrer" 
                   href="https://drive.google.com/file/d/1-IO8KU7Pka2poRzrDD9Lxn9Rm38TcrYX/view?usp=sharing">Download CV</a></div>
-
               </div>
           </div>
       </div>
@@ -61,7 +60,7 @@
             <div class="col-lg-8 text-white">
               <div class="landing-title">Hi, I'm Bui Anh Tuan
                 <div id="flip">
-                  <div class="font-size-5vh">I'm</div>
+                  <div class="font-size-5vh mr-2">I'm</div>
                   <div class="flip-inner">
                     <div class="font-size-5vh flip-front">
                       engineer
@@ -324,8 +323,8 @@
     </div>
 
     <div class="navbar navbar-expand-md">
-      <div class="navbar-nav mx-auto flex-row">
-        <a href="#landing" class="text-center text-white flex-column"><div class="material-icons">keyboard_arrow_up</div><div>Home</div></a>
+      <div class="navbar-nav mx-auto ">
+        <a href="#top" class="text-center text-white d-flex flex-column"><div class="material-icons">keyboard_arrow_up</div><div>Home</div></a>
       </div>      
     </div>
     <script src="./assets//tiltjs/vanilla-tilt.min.js"></script>

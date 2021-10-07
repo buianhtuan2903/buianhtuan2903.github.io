@@ -134,12 +134,11 @@ li{
 }
 
 .flip-front, .flip-back {
-  min-width: 200px;
+  min-width: max-content;
   text-align: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   padding: 0px 3px;
-  margin: 0 10px;
   border-radius: 4px;
 }
 
