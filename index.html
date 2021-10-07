@@ -11,21 +11,10 @@
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"> 
     <link rel="stylesheet" href="./assets/styles.css">
 
-    <!-- Required styles for Material Web -->
-    <link rel="stylesheet" href="./assets/mdc/material-components-web.min.css">
-    <!-- Required Material Web JavaScript library -->
-    <script src="./assets/mdc/material-components-web.min.js"></script>
-    <!-- Instantiate single textfield component rendered in the document -->
-    <!-- <script>
-    mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
-    </script> -->
-    <link rel="stylesheet" href="./assets/mdc/Material-icon.css">
-
     <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="./assets/jquery/jquery.min.js"></script>
     <script src="./assets/bootstrap/bootstrap.min.js"></script>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
 </head>
 
@@ -41,7 +30,7 @@
               <div class="navbar-nav ml-auto justify-content-center">
                 <div class="nav-link px-3"><div class="nav-item cursor-pointer" onclick="experience()">Experiences</div></div>
                 <div class="nav-link px-3"><div class="nav-item cursor-pointer" onclick="project()">Projects</div></div>
-                <div class="nav-link px-3"><a class="btn nav-link px-2 mx-auto main-color" target="_blank" rel="noopener noreferrer" 
+                <div class="nav-link px-3"><a class="btn nav-link mx-auto px-2 main-color font-500" target="_blank" rel="noopener noreferrer" 
                   href="https://drive.google.com/file/d/1-IO8KU7Pka2poRzrDD9Lxn9Rm38TcrYX/view?usp=sharing">Download CV</a></div>
 
               </div>
@@ -53,19 +42,8 @@
           <div class="rain front-row"></div>
           <div class="rain back-row"></div>
       </div>
-      <ul class="circles-animation">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <div class="container pt-3 pb-5" >
+
+      <div class="container pb-5" >
         <div class="row">
             <div class="col-lg-4">
                 <img src="./assets/img/profilepicture.png" alt="avatar" id="avatar" class="mb-4">
@@ -96,31 +74,45 @@
               </div>
               <div class="landing-text"> I'm experiences working in high volume manufacturing and mechanical design field. <br>
                 Seeking technical and management leverage, especially in production and automation development.</div>
-              <a class="btn my-5 mx-auto main-color justify-content-center" rel="noopener noreferrer" target="blank" 
+              <a class="btn my-5 mx-auto main-color font-500" rel="noopener noreferrer" target="blank" 
               href="https://drive.google.com/file/d/1-IO8KU7Pka2poRzrDD9Lxn9Rm38TcrYX/view?usp=sharing">DOWNLOAD CV</a>
             </div>
         </div>
       </div>
+      <ul class="circles-animation">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
 
   </div>
 
     <div id="experience" class="py-5">
       <div class="container">
-        <div class="heading py-4">EXPERIENCES</div>
-        <div class="timeline">
-          <div class="row pb-5">
-            <div class="col-lg-6 timeline-right px-4 pt-3">
+        <div class="heading py-4 js-scroll fade-in-bottom">EXPERIENCES</div>
+        <div class="timeline js-scroll fade-in-bottom">
+          <div class="row">
+            <div class="col-lg-6 timeline-right px-4 pt-3 js-scroll fade-in-bottom">
               <div class="title ">12/2019 - Current</div>
               <div class="title-location">HCMC, Vietnam</div>
             </div>
-            <div class="col-lg-6 order-lg-first px-4 pt-3" >
+            <div class="col-lg-6 order-lg-first px-4 pt-3 js-scroll fade-in-bottom" >
               <div class="text-lg-right cursor-pointer" data-toggle="collapse" data-target="#Ex1">
                 <div class="title-strong" >Process & Equipment Engineer</div>
-                <div class="title d-inline">Intel Products Vietnam</div> 
-                <div class="d-inline-flex btn btn-expand text-center material-icons">expand_more</div>
+                <div class="d-inline-flex justify-content-end align-items-center">
+                  <div class="title mr-2">Intel Products Vietnam</div> 
+                  <div class="btn btn-expand material-icons main-color">expand_more</div>
+                </div>
               </div> 
-              <div class="pt-3 collapse show" id="Ex1">
+              <div class="pt-2 collapse show" id="Ex1">
                 - Monitor, control and improve process/hardware performance in Burn In Testing module for semiconductor devices. <br>
                 - Plan and coordinate to solve issue with various stakeholders to ensure flawless ramp on sustaining in HVM and implement New Product in Vietnam timely and seamlessly. <br>
                 - Explore and perform Improvement Projects to solve hardware issue, improve yield, cost, hardware/software performance. <br>
@@ -133,17 +125,19 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-6 timeline-left px-4 pt-3 text-lg-right">
+            <div class="col-lg-6 timeline-left px-4 pt-3 text-lg-right js-scroll fade-in-bottom">
               <div class="title">11.2018-11.2019</div>
               <div class="title-location">HCMC, Vietnam</div>
             </div>
-            <div class="col-lg-6 px-4 pt-3" >
+            <div class="col-lg-6 px-4 pt-3 js-scroll fade-in-bottom" >
               <div class="text-lg-left cursor-pointer" data-toggle="collapse" data-target="#Ex2">
                 <div class="title-strong">R&D Engineer</div>
-                <div class="title d-inline-flex">Nidec Vietnam R&D Center</div> 
-                <div class="d-inline-flex btn btn-expand text-center material-icons">expand_more</div>
+                <div class="d-inline-flex justify-content-end align-items-center">
+                  <div class="title mr-2">Nidec Vietnam R&D Center</div> 
+                  <div class="btn btn-expand material-icons main-color">expand_more</div>
+                </div>
               </div>
-              <div class="pt-3 collapse show" id="Ex2">
+              <div class="pt-2 collapse show" id="Ex2">
                 - Continue designing NPI products and plastic injection mold for motor components and resolve production issues in NPI phrase. <br>
                 - Implement new mold production process in Vietnam include planning, design, manufacture, quality control and maintenance. <br>
                 - Design fixtures and support automation R&D team on multi projects such as install and set up IoT package for new equipment. <br>
@@ -155,35 +149,39 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-6 timeline-left px-4 pt-3 text-lg-right">
+            <div class="col-lg-6 timeline-left px-4 pt-3 text-lg-right js-scroll fade-in-bottom">
                 <div class="title">11.2017-11.2018</div>
                 <div class="title-location">Kyoto, Japan</div>
               </div>
-              <div class="col-lg-6 px-4 pt-3" >
+              <div class="col-lg-6 px-4 pt-3 js-scroll fade-in-bottom" >
                 <div class="text-lg-left cursor-pointer" data-toggle="collapse" data-target="#Ex3">      
                 <div class="title-strong">Mechanical design Engineer</div>
-                <div class="title d-inline">Nidec Global Production Engineering Japan</div> 
-                <div class="d-inline-flex btn btn-expand text-center material-icons">expand_more</div>
+                <div class="d-inline-flex justify-content-end align-items-center">
+                  <div class="title mr-2">Nidec Global Production Engineering Japan</div> 
+                  <div class="btn btn-expand material-icons main-color">expand_more</div>
+                </div>
               </div>
-              <div class="pt-3 collapse show" id="Ex3">
+              <div class="pt-2 collapse show" id="Ex3">
                 - Design product and plastic injection mold for motor components: insulator, housing, fan using Solidworks and Siemens NX. <br>
                 - Simulate plastic injection molding using CAD Doctor, Moldflow. <br>
                 - Support on modify, set up and debug universal machine for various purpose in motor assembly line. <br>              
               </div>
             </div>
           </div>
-          <div class="row pt-5">
-            <div class="col-lg-6 timeline-right px-4 pt-3">
+          <div class="row">
+            <div class="col-lg-6 timeline-right px-4 pt-3 js-scroll fade-in-bottom">
               <div class="title">05.2016-09.2016</div>
               <div class="title-location">HCMC, Vietnam</div>
             </div>
-            <div class="col-lg-6 order-lg-first px-4 pt-3" >
+            <div class="col-lg-6 order-lg-first px-4 pt-3 js-scroll fade-in-bottom" >
               <div class="text-lg-right cursor-pointer" data-toggle="collapse" data-target="#Ex4">
                 <div class="title-strong">CAE Engineer Intern</div>
-                <div class="title d-inline">ESI Vietnam</div> 
-                <div class="d-inline-flex btn btn-expand text-center material-icons">expand_more</div>
+                <div class="d-inline-flex justify-content-end align-items-center">
+                  <div class="title mr-2">ESI Vietnam</div> 
+                  <div class="flex-end btn btn-expand material-icons main-color">expand_more</div>
+                </div>
               </div>
-              <div class="pt-3 collapse show" id="Ex4">
+              <div class="pt-2 collapse show" id="Ex4">
                 - Modeling and meshing car safety contact problems using Visual Mesh. <br>
                 - Perform car safety crash test simulation using FEM and Pam Crash.
               </div>
@@ -194,11 +192,11 @@
     </div>
 
     <div id="project" class=" bg-light py-5">
-        <div class="container" >
-            <div class="heading py-4">PROJECTS</div>
+        <div class="container">
+            <div class="heading py-4 js-scroll fade-in-bottom">PROJECTS</div>
             <div class="row">
                 <div class="col-xl-4">
-                    <div class="card mb-4 zoom shadow" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
+                    <div class="card mb-4 zoom shadow js-scroll fade-in-bottom" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
                         <div class="card-header">Automation mold design</div>
                         <div class="card-body">                        
                             <div class="py-2">Application to automation mold design 3D in Solidworks 2018 for mechanical engineer</div>
@@ -216,7 +214,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4">
-                    <div class="card mb-4 zoom shadow" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
+                    <div class="card mb-4 zoom shadow js-scroll fade-in-bottom" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
                         <div class="card-header">Front-end web developer</div>
                         <div class="card-body">
                             <!-- <div class="heading py-3 text-center">$9.99</div> -->
@@ -242,7 +240,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4">
-                    <div class="card mb-4 zoom shadow" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
+                    <div class="card mb-4 zoom shadow js-scroll fade-in-bottom" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
                       <div class="card-header">Full stack web developer</div>
                       <div class="card-body">                        
                           <div class="py-2">Web app to manage team and workspace similar to Microsoft Teams</div>
@@ -265,40 +263,40 @@
 
     <div id="skill" class="py-5">
       <div class="container">
-        <div class="heading py-4">SKILLS</div>
-        <div class="row">
-          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
+        <div class="heading py-4 js-scroll fade-in-bottom">SKILLS</div>
+        <div class="row js-scroll fade-in-bottom">
+          <a class="btn main-color font-500 m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=Siemens+NX">SIEMENS NX</a>
-          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
+          <a class="btn main-color font-500 m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=Solidworks">SOLIDWORKS</a>
-          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
+          <a class="btn main-color font-500 m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=Abaqus">ABAQUS</a>
-          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
+          <a class="btn main-color font-500 m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=Moldflow">MOLDFLOW</a>
-          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
+          <a class="btn main-color font-500 m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=JMP">JMP</a>
-          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
+          <a class="btn main-color font-500 m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=PowerBI">POWER BI</a>
-          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
+          <a class="btn main-color font-500 m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=C#">C#</a>
-          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
+          <a class="btn main-color font-500 m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=VBA">VBA</a>
-          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
+          <a class="btn main-color font-500 m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=Visual+Studio+Code">VISUAL STUDIO</a>
-          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
-          href="http://www.google.com/search?q=HTML+CSS+JS">HTML CSS JS</a>
-          <a class="btn btn-skill jusify-content-center m-2 shadow" target="_blank" rel="noopener noreferrer"
+          <a class="btn main-color font-500 m-2 shadow" target="_blank" rel="noopener noreferrer"
+          href="http://www.google.com/search?q=HTML+CSS+JS">HTML CSS Javascript</a>
+          <a class="btn main-color font-500 m-2 shadow" target="_blank" rel="noopener noreferrer"
           href="http://www.google.com/search?q=Angular">ANGULAR</a>
-          <a class="btn btn-skill jusify-content-center m-2 shadow" href="#">ENGLISH</a>
-          <a class="btn btn-skill jusify-content-center m-2 shadow" href="#">OFFICE</a>
-          <a class="btn btn-skill jusify-content-center m-2 shadow" href="#">PROBLEM SOLVING</a>
+          <a class="btn main-color font-500 m-2 shadow" href="#">ENGLISH</a>
+          <a class="btn main-color font-500 m-2 shadow" href="#">OFFICE</a>
+          <a class="btn main-color font-500 m-2 shadow" href="#">PROBLEM SOLVING</a>
         </div>
       </div>
     </div>
     <div id="info" class="bg-light py-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 js-scroll fade-in-bottom">
             <div class="heading py-4">EDUCATION</div>
             <div class="text-center">
               <a href="https://www.hcmut.edu.vn/en/welcome/view/departments--offices/faculties--training-centers/applied-sciences-"
@@ -312,12 +310,12 @@
               GPA: 7.1 / 10
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 js-scroll fade-in-bottom">
             <div class="heading py-4" >CERTIFICATES</div>
             <div class="text-center">
-                Intel Lean Six Sigma Yellow Belt -2020 <br> TOEIC 665 - 2016</div>
+                Intel Lean Six Sigma Yellow Belt -2020</div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 js-scroll fade-in-bottom">
             <div class="heading py-4">INTEREST</div>
             <div class="text-center">Coding / Design / Travel / Football</div>
           </div>
@@ -332,10 +330,10 @@
     </div>
     <script src="./assets//tiltjs/vanilla-tilt.min.js"></script>
     <script src="./assets/rainanimation.js"></script>
+    <script src="./assets/scroll-effect.js"></script>
 
 
-
-    <script>
+    <!-- <script>
       function experience(){
         document.getElementById("experience").scrollIntoView({behavior:"smooth"});
         document.getElementById("experience").animate([
@@ -369,7 +367,7 @@
             duration: 800,
           })
       }
-    </script>
+    </script> -->
 
     <script>
       if (window.screen.width < 992 ) {
