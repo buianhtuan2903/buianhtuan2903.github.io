@@ -34,6 +34,11 @@ li{
 
 .main-color{
   background-color: #406BB8;
+  color: rgba(255, 255, 255,0.6);
+}
+
+.main-color:hover{
+  background-color: #406BB8;
   color: white;
 }
 
@@ -52,9 +57,6 @@ li{
   text-align: center;
 }
 
-
-
-/* Landing */
 .nav-link, .nav-item, .info{
   color: rgba(255, 255, 255,0.6);
   justify-content: center;
@@ -65,6 +67,7 @@ li{
   color: white;
 }
 
+/* Landing */
 .info{
   display: flex;
   justify-content: center;
@@ -96,13 +99,59 @@ li{
 
 .landing-title{
   text-align: center;
-  font-size: 3.4rem;
+  font-size: 5vh;
   font-weight: 500;
   margin: 2rem 0;
 }
 
 .landing-text{
   font-size: 1.3rem;
+}
+
+.font-size-5vh{
+  font-size: 5vh;
+}
+
+#flip{
+  display: inline-flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.flip-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+#flip:hover .flip-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-front, .flip-back {
+  background-color: #0E1623;
+  min-width: max-content;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding: 0px 3px;
+  margin: 0 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.flip-front{
+  position: absolute;
+}
+
+.flip-front {
+  background-color: #0E1623;
+  color: white;
+}
+
+.flip-back {
+  background-color: white !important;
+  color: black;
+  transform: rotateX(180deg);
 }
 
 .heading{
@@ -132,6 +181,8 @@ li{
 .cursor-pointer{
   cursor: pointer;
 }
+
+
 
 /* Background animate circle */
 .circles-animation{
