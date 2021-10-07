@@ -47,6 +47,17 @@ li{
 .font-500{
   font-weight: 500;
 }
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #406BB8; 
+}
+
 /* Navbar */
 .navbar{
   background-color: #0E1623;;
