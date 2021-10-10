@@ -645,7 +645,7 @@ li{
   width: 100vw;
   height: 100vh;
   background-color: #0E1623;
-  animation: loading 2800ms; 
+  animation: loading 3000ms; 
 }
 
 #spinner {
