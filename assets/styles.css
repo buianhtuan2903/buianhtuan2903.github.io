@@ -163,7 +163,7 @@ li{
 
 .flip-back {
   background-color: white !important;
-  color: black;
+  color: #0E1623;
   transform: rotateX(180deg);
 }
 
@@ -460,9 +460,10 @@ li{
   }
 
 /* Experience */
-/* #experience{
-  background-color:#0E1623;
-} */
+#experience{
+  background-color:white;
+}
+
 .btn-expand , .btn-expand:hover{
   padding: 4px;
   border-radius: 50%;
@@ -527,6 +528,10 @@ li{
 }
 
 /* Skill */
+#skill{
+  background-color: white;
+}
+
 .card-body > div > .btn-price:hover{
   background-color: #406BB8;
   color: white;
@@ -534,7 +539,7 @@ li{
 
 /* Bottom */
 #bottom{
-  background-color: #191A1D;
+  background-color: #0E1623;
 }
 
 /* Timeline */
@@ -634,3 +639,60 @@ li{
     opacity: 1;
   }
 }
+
+/* Loading screen */
+#loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0E1623;
+  animation: loading 2800ms; 
+}
+
+#spinner {
+  height: 100%;
+  align-items: center;
+}
+
+#spinner-border{
+  width: 10vh; 
+  height: 10vh;
+}
+
+@-webkit-keyframes loading {
+  0% { 
+    -webkit-transform: translateY(-100vh);
+    transform: translateY(-100vh);
+  } 
+  30% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  70% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100vh);
+    transform: translateY(-100vh);
+  }
+}
+
+@keyframes loading { 
+  0% { 
+    -webkit-transform: translateY(-100vh);
+    transform: translateY(-100vh);
+  } 
+  30% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  70% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100vh);
+    transform: translateY(-100vh);
+  }
+}
+

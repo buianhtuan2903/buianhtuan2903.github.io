@@ -19,7 +19,16 @@
 
 </head>
 
-<body>
+<body onload="myFunction()">
+
+  <div id="loader">
+    <div class="d-flex justify-content-center" id="spinner">
+      <div class="spinner-border text-white" role="status" id="spinner-border">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </div>
+  <div id="data" style="display:none;">
     <div class="navbar navbar-expand-md" id="top">
       <div class="container">
           <a href="https://buianhtuan2903.github.io/">
@@ -37,6 +46,7 @@
           </div>
       </div>
     </div>
+
     <div id="landing" class="py-5">
       <div class="rain-animation">
           <div class="rain front-row"></div>
@@ -92,9 +102,6 @@
         <li></li>
       </ul>
     </div>
-
-  </div>
-
     <div id="experience" class="py-5">
       <div class="container">
         <div class="heading py-4 js-scroll fade-in-bottom">EXPERIENCES</div>
@@ -190,7 +197,6 @@
         </div>
       </div>
     </div>
-
     <div id="project" class=" bg-light py-5">
         <div class="container py-5">
             <div class="heading py-4 js-scroll fade-in-bottom">PROJECTS</div>
@@ -260,7 +266,6 @@
             </div>
         </div>
     </div>
-
     <div id="skill" class="py-5">
       <div class="container pb-5">
         <div class="heading py-4 js-scroll fade-in-bottom">SKILLS</div>
@@ -332,43 +337,6 @@
     <script src="./assets/rainanimation.js"></script>
     <script src="./assets/scroll-effect.js"></script>
 
-
-    <!-- <script>
-      function experience(){
-        document.getElementById("experience").scrollIntoView({behavior:"smooth"});
-        document.getElementById("experience").animate([
-            { 
-              opacity: 0,
-              transform: 'translateY(-20px)'
-            },
-            {
-              opacity: 1,
-              easing: 'ease-out',
-              transform: 'translateY(0)',
-            }
-          ], {
-            duration: 800,
-          })
-      }
-
-      function project(){
-        document.getElementById("project").scrollIntoView({behavior:"smooth"});
-        document.getElementById("project").animate([
-            { 
-              opacity: 0,
-              transform: 'translateY(-20px)'
-            },
-            {
-              opacity: 1,
-              easing: 'ease-out',
-              transform: 'translateY(0)',
-            }
-          ], {
-            duration: 800,
-          })
-      }
-    </script> -->
-
     <script>
       if (window.screen.width < 992 ) {
         element = document.querySelectorAll(".zoom");
@@ -379,5 +347,17 @@
         }
       }
     </script>
+  </div>
+    <script>
+      var myVar;
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+      
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("data").style.display = "block";
+      }
+      </script>
 </body>
 </html>
