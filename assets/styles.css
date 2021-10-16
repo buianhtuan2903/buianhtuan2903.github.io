@@ -59,7 +59,7 @@ li{
 }
 
 /* Navbar */
-.navbar{
+.navbar, #bottom{
   background-color: #0E1623;;
   color: white;
 }
@@ -460,7 +460,7 @@ li{
   }
 
 /* Experience */
-#experience{
+#experience, #skill{
   background-color:white;
 }
 
@@ -476,7 +476,6 @@ li{
   background-size: cover;
 }
 
-
 .card{
   transform-style: preserve-3d;
   border: 1px solid #ececec;
@@ -486,22 +485,8 @@ li{
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
   position: relative;
   z-index: 1;
-  background: inherit;
-  overflow: hidden;
-}
-
-.card:before {
-  content: "";
-  position: absolute;
-  background: inherit;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-  filter: blur(20px);
-  margin: -20px;
+  /* background: inherit; */
+  /* overflow: hidden; */
 }
 
 .card-header{
@@ -519,6 +504,7 @@ li{
   display:inline-flex;
   border: none;
 }
+
 @media screen and (max-width: 992px) {
   .zoom:hover, .zoom:focus{
       -webkit-transform: scale(1.1);
@@ -527,23 +513,12 @@ li{
   }
 }
 
-/* Skill */
-#skill{
-  background-color: white;
-}
-
 .card-body > div > .btn-price:hover{
   background-color: #406BB8;
   color: white;
 }
 
-/* Bottom */
-#bottom{
-  background-color: #0E1623;
-}
-
 /* Timeline */
-/* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
   margin: 0 auto;
@@ -590,10 +565,6 @@ li{
   left: calc(0.4rem - 9px) !important;
   }
   
-  /* Make all right containers behave like the left ones */
-  /* .timeline-right {
-  left: 0%;
-  } */
 }
 
 /* Loading effect */
