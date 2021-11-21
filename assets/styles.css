@@ -4,16 +4,8 @@
   --bat-light : #ffffff;
   --bat-opacity: rgba(243, 243, 243, 0.2);
   --bat-opacity2: rgba(64, 106, 184, 0.2);
-
-
   --bat-dark: #0E1623;
   --bat-dark2: #23303F;
-  /*  --bat-grey : #ececec;
-  --bat-dark3: #1A222D;
-  --bat-blue: #314663;
-  --bat-grey: #313742;
-  --bat-darkgrey: #1D2533;
-  --bat-darkblue: #292E39; */
   --bg-primary: var(--bat-dark);
   --bg-secondary: var(--bat-dark2);
   --txt-primary: var(--bat-light);
@@ -21,6 +13,12 @@
   --txt-opacity: var(--bat-opacity);
   --dark-opacity:0;
   --light-opacity:1;
+    /*  --bat-grey : #ececec;
+  --bat-dark3: #1A222D;
+  --bat-blue: #314663;
+  --bat-grey: #313742;
+  --bat-darkgrey: #1D2533;
+  --bat-darkblue: #292E39; */
 }
 
 *{
