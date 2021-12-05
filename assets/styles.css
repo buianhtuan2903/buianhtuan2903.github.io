@@ -213,6 +213,19 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   border-radius: 50%;
   margin: auto;
   display: block;
+  animation: up-down 3s infinite;
+}
+
+@keyframes up-down {
+0% {
+  transform:translate(0,-20px);
+}
+50% {
+  transform:translate(0,0px);
+  }
+100% {
+  transform:translate(0,-20px);
+}
 }
 
 #landing{
