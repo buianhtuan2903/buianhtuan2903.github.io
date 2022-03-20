@@ -303,7 +303,7 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
     height: 20px;
     background: var(--txt-opacity);
     animation: flow-animate 10s linear infinite;
-    bottom: -50rem;
+    bottom: -55rem;
 }
 
 .circles-animation li:nth-child(1){
