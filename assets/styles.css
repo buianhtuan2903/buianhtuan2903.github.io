@@ -73,11 +73,11 @@ li{
   background-color: var(--bat-primary);
 }
 
-.navbar, #bottom, #landing, #project, #info{
+.navbar, #landing, #skill, .card, .card-header{
   background-color: var(--bg-primary);
 }
 
-.all-content, #experience, #skill, .card, .card-header{
+.all-content, #project, #experience, #info, #bottom {
   background-color:var(--bg-secondary);
 }
 
@@ -217,30 +217,25 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
 }
 
 @keyframes up-down {
-0% {
-  transform:translate(0,-20px);
-}
-50% {
-  transform:translate(0,0px);
+  0% {
+    transform:translate(0,-20px);
   }
-100% {
-  transform:translate(0,-20px);
-}
+  50% {
+    transform:translate(0,0px);
+    }
+  100% {
+    transform:translate(0,-20px);
+  }
 }
 
 #landing{
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 40px));
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 40px));
 }
 
-#project{
+#skill{
   -webkit-clip-path: polygon(0 0, 100% calc(0% + 40px), 100% 100%, 0 calc(100% - 40px));
   clip-path: polygon(0 0, 100% calc(0% + 40px), 100% 100%, 0 calc(100% - 40px));
-}
-
-#info{
-  -webkit-clip-path: polygon(0 0, 100% calc(0% + 40px), 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% calc(0% + 40px), 100% 100%, 0 100%);
 }
 
 #flip{
@@ -498,3 +493,85 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   }
 }
 
+
+/* Image zoom on click */
+#CVImg{
+  width: 100%;
+  /* max-width: 200px; */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#CVImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding: 2% 0px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 50%;
+  /* max-width: 700px; */
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: #f1f1f1;
+  font-size: 3rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+
+  .modal {
+    padding: 15% 0px;
+  }
+  
+}
