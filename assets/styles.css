@@ -271,11 +271,6 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   transform: rotateX(180deg);
 }
 
-/* Experience */
-.job-title, .job-title:hover{
-  cursor: pointer;
-}
-
 /* Project */
 .card{
   transform-style: preserve-3d;
@@ -287,6 +282,16 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
     -webkit-transform: scale(1.1) !important;
     transform: scale(1.1) !important;
     transition-duration: 0.6s;
+  }
+  .card-columns {
+    column-count: 1;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card-columns {
+    column-count: 3;
+    column-gap: 2rem;
   }
 }
 
@@ -400,55 +405,6 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
     }
 }
 
-/* Timeline */
-.timeline {
-  position: relative;
-  margin: 0 auto;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 2px;
-  background-color: var(--bat-primary);
-  top: 0;
-  bottom: 0;
-  left: calc(50% - 1px);
-}
-
-/* The circles on the timeline */
-.timeline-left::after , .timeline-right::after {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  right: -10px;
-  background-color: var(--bat-primary);
-  border: 10px solid var(--bat-primary);
-  top: calc(1rem + 4px);
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Fix the circle for containers on the right side */
-.timeline-right::after {
-  left: -10px;
-}
-
-@media screen and (max-width: 992px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-  left: 0.4rem;
-  }
-
-  /* Make sure all circles are at the same spot */
-  .timeline-left::after, .timeline-right::after {
-  left: calc(0.4rem - 9px) !important;
-  }
-  
-}
-
 /* Loading effect */
 .container {
   -webkit-animation: fadein ease-out 1s; 
@@ -497,7 +453,6 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
 /* Image zoom on click */
 #CVImg{
   width: 100%;
-  /* max-width: 200px; */
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -505,12 +460,11 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
 
 #CVImg:hover {opacity: 0.7;}
 
-/* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding: 2% 0px; /* Location of the box */
+  padding: 6% 0px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -520,15 +474,13 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
 }
 
-/* Modal Content (image) */
+
 .modal-content {
   margin: auto;
   display: block;
   width: 50%;
-  /* max-width: 700px; */
 }
 
-/* Add Animation */
 .modal-content, #caption {  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
@@ -546,10 +498,9 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   to {transform:scale(1)}
 }
 
-/* The Close Button */
 .close {
   position: absolute;
-  top: 2%;
+  top: 8%;
   right: 2%;
   color: #f1f1f1;
   font-size: 3rem;
@@ -564,14 +515,12 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 992px){
   .modal-content {
     width: 100%;
   }
 
   .modal {
-    padding: 15% 0px;
+    padding: 35% 0px;
   }
-  
 }

@@ -23,7 +23,7 @@
 
   <input type="checkbox" class="checkbox" id="check">
   <div class="all-content">
-  <div class="navbar navbar-expand-md" id="top">
+  <div class="navbar navbar-expand-md sticky-top" id="top">
     <div class="container">
         <a href="https://buianhtuan2903.github.io/">
           <div class="title">Bui Anh Tuan</div></a>
@@ -39,7 +39,7 @@
           <div class="navbar-nav ml-auto justify-content-center d-flex flex-row flex-wrap">
             <!-- <div class="nav-link px-3"><a class="nav-item" href="#experience">Experiences</a></div> -->
             <div class="nav-link px-3"><a class="nav-item" href="#project">My Projects</a></div>
-            <div class="nav-link py-1 pl-3"><a class="btn mx-auto px-2 main-color title" target="_blank" rel="noopener noreferrer" 
+            <div class="nav-link pt-2 pl-3"><a class="btn mx-auto px-2 main-color title" target="_blank" rel="noopener noreferrer" 
               href="https://drive.google.com/file/d/1-IO8KU7Pka2poRzrDD9Lxn9Rm38TcrYX/view?usp=sharing">Download CV</a></div>
           </div>
         </div>
@@ -63,7 +63,7 @@
                   <span class="material-icons mr-2">smartphone</span>(+84) 98 222 7965</a>
               </div>
           </div>
-          <div class="col-lg-8">
+          <div class="col-xl-8">
             <div class="text-center my-4">
               <div class="landing-title">Hi, I'm Tuan</div>
               <div id="flip">
@@ -78,8 +78,7 @@
                 </div>
               </div> 
             </div>
-            <div class="title"> I have experiences working in high volume manufacturing and mechanical design field. <br>
-              Seeking technical and management leverage, especially in production and automation development.</div>
+            <div class="title"> I am experienced in many fields such as process, equipment, manufacturing, mechanical design and automation.</div>
               <div class="text-center mt-4">
                 <img id="CVImg" class="col-sm-2" src="./assets/img/BuiAnhTuan_CV_Eng.JPG" >
               </div>
@@ -210,60 +209,86 @@
   </div> -->
 
   <div id="project" class="py-5">
-      <div class="container py-5">
-          <div class="landing-title text-center py-4 js-scroll fade-in-bottom">PROJECTS</div>
-          <div class="row">
-            <div class="col-xl-1"></div>
-              <div class="col-xl-5 js-scroll fade-in-bottom">
-                  <div class="card mb-4 zoom shadow " data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
-                      <div class="card-header text-center">Automation mold design</div>
-                      <div class="card-body">                        
-                          <div class="py-2">Application to automation mold design 3D in Solidworks 2018 for mechanical engineer</div>
-                          <div class="py-2">Stack: C# + Solidworks 2018</div>
-                          <img class="py-2 w-100" src="./assets/img/running.gif" alt="demo-run" id="MoldGif">
-                          <div class="py-2 text-center">
-                              <a class="btn btn-price justify-content-center m-2"
-                              href="https://github.com/buianhtuan2903/AutomationDesignSolidwork" target="_blank" rel="noopener noreferrer">
-                              <span class="material-icons mr-2">code</span>Code</a>
-                            <a class="btn btn-price justify-content-center m-2"
-                            href="https://buianhtuan2903.github.io/AutomationDesignSolidwork/" target="_blank" rel="noopener noreferrer">
-                              <span class="material-icons mr-2">slideshow</span>Demo</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-xl-5 js-scroll fade-in-bottom">
-                  <div class="card mb-4 zoom shadow" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
-                      <div class="card-header text-center">Web development</div>
-                      <div class="card-body">
-                          <!-- <div class="landing-title py-3 text-center">$9.99</div> -->
-                          <div class="py-2 text-center">Portfolio website</div>
-                          <div class="py-2 text-center">
-                            <a class="btn btn-price justify-content-center m-2" 
-                            href="https://github.com/buianhtuan2903/buianhtuan2903.github.io" target="_blank" rel="noopener noreferrer">
-                              <span class="material-icons mr-2">code</span>Code</a>
-                            <a class="btn btn-price justify-content-center m-2" target="_blank" rel="noopener noreferrer"
-                            href="https://buianhtuan2903.github.io/" >
-                              <span class="material-icons mr-2">slideshow</span>Demo</a></a> 
-                          </div>                           
-                          <!-- <div class="py-2 text-center ">Web app to manage team and workspace similar to Microsoft Teams</div>
-                          <div class="py-2 text-center ">Stack: Web + Angular + Firebase</div>
-                          <div class="py-2 text-center">
-                            <div class="btn btn-price text-center justify-content-center w-100">
-                              Ongoing
-                              <a class="btn btn-price justify-content-center m-2"
-                              href="https://github.com/buianhtuan2903/basic-app" target="_blank" rel="noopener noreferrer">
-                              <span class="material-icons mr-2">code</span>Code</a>
-                              <a class="btn btn-price justify-content-center m-2"
-                              href="https://buianhtuan2903.github.io/basic-app/" target="_blank" rel="noopener noreferrer">
-                              <span class="material-icons mr-2">slideshow</span>Demo</a>
-                            </div>
-                          </div> -->
-                      </div>
-                  </div>
-              </div>
-          </div>
+    <div class="container py-5">
+      <div class="landing-title text-center py-4 js-scroll fade-in-bottom">MY PROJECTS</div>
+      <div class="card-columns js-scroll fade-in-bottom ">
+        <div class="card my-4 zoom shadow " data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
+            <div class="card-header text-center">Automation mold design</div>
+            <div class="card-body">                        
+                <div class="py-2">Application to automation mold design 3D in Solidworks 2018 for mechanical engineer</div>
+                <div class="py-2">Stack: C# + Solidworks 2018</div>
+                <img class="py-2 w-100" src="./assets/img/running.gif" alt="demo-run" id="MoldGif">
+                <div class="py-2 text-center">
+                    <a class="btn btn-price justify-content-center m-2"
+                    href="https://github.com/buianhtuan2903/AutomationDesignSolidwork" target="_blank" rel="noopener noreferrer">
+                    <span class="material-icons mr-2">code</span>Code</a>
+                  <a class="btn btn-price justify-content-center m-2"
+                  href="https://buianhtuan2903.github.io/AutomationDesignSolidwork/" target="_blank" rel="noopener noreferrer">
+                    <span class="material-icons mr-2">slideshow</span>Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="card my-4 zoom shadow" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
+            <div class="card-header text-center">Auto export Solidworks</div>
+            <div class="card-body">
+                <!-- <div class="landing-title py-3 text-center">$9.99</div> -->
+                <div class="py-2">Tired for exporting thousand of drawings to PDF? Try this tool!</div>
+                <div class="py-2 text-center">
+                  <a class="btn btn-price justify-content-center m-2" 
+                  href="https://github.com/buianhtuan2903/autoexport-solidwork" target="_blank" rel="noopener noreferrer">
+                    <span class="material-icons mr-2">code</span>Code</a>
+                </div>                           
+
+            </div>
+        </div>
+      
+        <div class="card my-4 zoom shadow" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
+            <div class="card-header text-center">Portfolio website</div>
+            <div class="card-body">
+                <!-- <div class="landing-title py-3 text-center">$9.99</div> -->
+                <div class="py-2 text-center">Portfolio website</div>
+                <div class="py-2 text-center">
+                  <a class="btn btn-price justify-content-center m-2" 
+                  href="https://github.com/buianhtuan2903/buianhtuan2903.github.io" target="_blank" rel="noopener noreferrer">
+                    <span class="material-icons mr-2">code</span>Code</a>
+                  <a class="btn btn-price justify-content-center m-2" target="_blank" rel="noopener noreferrer"
+                  href="https://buianhtuan2903.github.io/" >
+                    <span class="material-icons mr-2">slideshow</span>Demo</a>
+            <!-- <div class="py-2 text-center ">Web app to manage team and workspace similar to Microsoft Teams</div>
+                    <div class="py-2 text-center ">Stack: Web + Angular + Firebase</div>
+                    <div class="py-2 text-center">
+                    <div class="btn btn-price text-center justify-content-center w-100">
+                      Ongoing
+                      <a class="btn btn-price justify-content-center m-2"
+                      href="https://github.com/buianhtuan2903/basic-app" target="_blank" rel="noopener noreferrer">
+                      <span class="material-icons mr-2">code</span>Code</a>
+                      <a class="btn btn-price justify-content-center m-2"
+                      href="https://buianhtuan2903.github.io/basic-app/" target="_blank" rel="noopener noreferrer">
+                      <span class="material-icons mr-2">slideshow</span>Demo</a>
+                    </div>
+                  </div> -->
+                </div>                           
+            </div>
+        </div>
+    
+        <div class="card my-4 zoom shadow" data-tilt data-tilt-max="20" data-tilt-speed="1500" data-tilt-perspective="1000" data-tilt-scale="1.06">
+            <div class="card-header text-center">Web development</div>
+            <div class="card-body">
+                <!-- <div class="landing-title py-3 text-center">$9.99</div> -->
+                <div class="py-2 text-center">Basic landing page mockup design</div>
+                <div class="py-2 text-center">
+                  <a class="btn btn-price justify-content-center m-2" 
+                  href="https://github.com/buianhtuan2903/basic-landing-page" target="_blank" rel="noopener noreferrer">
+                    <span class="material-icons mr-2">code</span>Code</a>
+                  <a class="btn btn-price justify-content-center m-2" target="_blank" rel="noopener noreferrer"
+                  href="https://buianhtuan2903.github.io/basic-landing-page" >
+                    <span class="material-icons mr-2">slideshow</span>Demo</a></a> 
+                </div>                           
+            </div>
+        </div>
+
       </div>
+    </div>
   </div>
   <div id="skill" class="py-5">
     <div class="container my-5 py-5">
