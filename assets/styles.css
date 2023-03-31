@@ -24,7 +24,8 @@
 *, html{
   box-sizing: border-box;
   overflow-wrap: break-word;
-  font-size: 1.5vmin;
+  /* font-size: calc(15px + 0.390625vw); */
+  font-size: calc(1vw + 1vh+ 1vmin);
   scroll-behavior: smooth;
   font-family: 'Rubik', sans-serif; 
 }
@@ -69,15 +70,15 @@ li{
   background-color: var(--bat-primary);
 }
 
-.navbar, #landing, #skill, .card, .card-header{
+.navbar, #landing, #project{
   background-color: var(--bg-primary);
 }
 
-.all-content, #project, #experience, #info, #bottom {
+.all-content, #about, #skill, #experience, .card, .card-header, #bottom {
   background-color:var(--bg-secondary);
 }
 
-.all-content, a, .second-color, .nav-link, .nav-item, .info, .btn-expand, .btn-price, .btn-price:hover, .btn-expand:hover{
+.all-content, a, .second-color, .nav-link, .nav-item, .info, .btn-price, .btn-price:hover{
   color: var(--txt-primary);
 }
 
@@ -187,6 +188,7 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
 
 .nav-link, .nav-item, .info{
   justify-content: center;
+  text-align: center;
   align-self: center;
   cursor: pointer;
 }
@@ -200,13 +202,13 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   padding: 5rem 0;
 }
 
-.info{
+/* .info{
   display: flex;
   margin: 1.1rem;
-}
+} */
 
 #avatar{
-  height: 15rem;
+  height: 20rem;
   border-radius: 50%;
   margin: auto;
   display: block;
@@ -230,7 +232,7 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 40px));
 }
 
-#skill{
+#project{
   -webkit-clip-path: polygon(0 0, 100% calc(0% + 40px), 100% 100%, 0 calc(100% - 40px));
   clip-path: polygon(0 0, 100% calc(0% + 40px), 100% 100%, 0 calc(100% - 40px));
 }
