@@ -93,11 +93,6 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   color: var(--bat-primary);
 }
 
-.flip-back {
-  background-color: var(--txt-secondary) !important;
-  color: var(--txt-primary);
-}
-
 .btn-expand{
   padding: 4px;
   border-radius: 50%;
@@ -243,32 +238,6 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   margin: auto;
   justify-content: center;
   cursor: pointer;
-}
-
-.flip-inner {
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-#flip:hover .flip-inner {
-  transform: rotateX(180deg);
-}
-
-.flip-front, .flip-back {
-  min-width: max-content;
-  text-align: center;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  padding: 0px 3px;
-  border-radius: 4px;
-}
-
-.flip-front{
-  position: absolute;
-}
-
-.flip-back {
-  transform: rotateX(180deg);
 }
 
 /* Project */
@@ -524,3 +493,6 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
     padding: 35% 0px;
   }
 }
+
+/*  */
+

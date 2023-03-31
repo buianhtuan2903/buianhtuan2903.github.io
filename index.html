@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Bui Anh Tuan portfolio website - Bui Anh Tuan Resume - Bui Anh Tuan CV">
+    <meta name="Description" content="Bui Anh Tuan portfolio">
     <title>Bui Anh Tuan | Portfolio</title>
     <link rel="icon" href="./assets/img/favicon_black.svg" type="image/ico"/>
     <link rel="icon" href="./assets/img/favicon.svg" type="image/ico" media="(prefers-color-scheme: dark)" />
@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet" media="all">
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"> 
     <link rel="stylesheet" href="./assets/styles.css">
-
     <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="./assets/script.js"></script>
     <script src="./assets/jquery/jquery.min.js"></script>
     <script src="./assets/bootstrap/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -68,13 +69,8 @@
               <div class="landing-title">Hi, I'm Tuan</div>
               <div id="flip">
                 <div class="landing-title mr-2">I'm</div>
-                <div class="flip-inner">
-                  <div class="landing-title flip-front">
-                    engineer
-                  </div>
-                  <div class="landing-title flip-back">
-                    developer
-                  </div>
+                <div href="" class="typewrite" data-period="2000" data-type='[ "engineer", "developer"]'>
+                  <span class="wrap"></span>
                 </div>
               </div> 
             </div>
@@ -106,107 +102,6 @@
     <img class="modal-content" id="ZoomImg">
     <div id="caption"></div>
   </div>
-
-  <!-- <div id="experience" class="py-5">
-    <div class="container">
-      <div class="landing-title text-center py-4 js-scroll fade-in-bottom">EXPERIENCES</div>
-
-     <div class="timeline js-scroll fade-in-bottom">
-        <div class="row">
-          <div class="col-lg-6 timeline-right px-4 pt-3 js-scroll fade-in-bottom">
-            <div class="title ">12/2019 - Current</div>
-            <div class="font-italic">HCMC, Vietnam</div>
-          </div>
-          <div class="col-lg-6 order-lg-first px-4 pt-3 js-scroll fade-in-bottom" >
-            <div class="text-lg-right job-title" data-toggle="collapse" data-target="#Ex1">
-              <div class="title-strong" >Process & Equipment Engineer</div>
-              <div class="d-inline-flex justify-content-end align-items-center">
-                <div class="title mr-2">Intel Products Vietnam</div> 
-                <div class="btn btn-expand material-icons ">expand_more</div>
-              </div>
-            </div> 
-            <div class="pt-2 collapse show" id="Ex1">
-              - Monitor, control and improve process/hardware performance in Burn In Testing module for semiconductor devices. <br>
-              - Plan and coordinate to solve issue with various stakeholders to ensure flawless ramp on sustaining in HVM and implement New Product in Vietnam timely and seamlessly. <br>
-              - Explore and perform Improvement Projects to solve hardware issue, improve yield, cost, hardware/software performance. <br>
-              - Collaborate with other modules and departments to control and reduce operation expense in Test department. <br>
-              <strong> Key achievement: </strong><br>
-              - Design new jig to enable old hardware run fungible in new tool. <br>
-              - Leading multi projects both strategy and engineering to reduce operation cost.
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 timeline-left px-4 pt-3 text-lg-right js-scroll fade-in-bottom">
-            <div class="title">11.2018-11.2019</div>
-            <div class="font-italic">HCMC, Vietnam</div>
-          </div>
-          <div class="col-lg-6 px-4 pt-3 js-scroll fade-in-bottom" >
-            <div class=" job-title" data-toggle="collapse" data-target="#Ex2">
-              <div class="title-strong">R&D Engineer</div>
-              <div class="d-inline-flex justify-content-end align-items-center">
-                <div class="title mr-2">Nidec Vietnam R&D Center</div> 
-                <div class="btn btn-expand material-icons">expand_more</div>
-              </div>
-            </div>
-            <div class="pt-2 collapse show" id="Ex2">
-              - Continue designing NPI products and plastic injection mold for motor components and resolve production issues in NPI phrase. <br>
-              - Implement new mold production process in Vietnam include planning, design, manufacture, quality control and maintenance. <br>
-              - Design fixtures and support automation R&D team on multi projects such as install and set up IoT package for new equipment. <br>
-              <strong>Key achievement: </strong> <br>
-              - Develop C# automate design tool decreased 23% design time.
-              <a target="_blank" href="https://github.com/buianhtuan2903/AutomationDesignSolidwork">
-                <div class="btn btn-price">Github</div>  
-              </a>
-              <a target="_blank" href="https://buianhtuan2903.github.io/AutomationDesignSolidwork/">
-                <div class="btn btn-price">Demo</div>  
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 timeline-left px-4 pt-3 text-lg-right js-scroll fade-in-bottom">
-              <div class="title">11.2017-11.2018</div>
-              <div class="font-italic">Kyoto, Japan</div>
-            </div>
-            <div class="col-lg-6 px-4 pt-3 js-scroll fade-in-bottom" >
-              <div class="job-title" data-toggle="collapse" data-target="#Ex3">      
-              <div class="title-strong">Mechanical design Engineer</div>
-              <div class="d-inline-flex justify-content-end align-items-center">
-                <div class="title mr-2">Nidec Global Production Engineering Japan</div> 
-                <div class="btn btn-expand material-icons">expand_more</div>
-              </div>
-            </div>
-            <div class="pt-2 collapse show" id="Ex3">
-              - Design product and plastic injection mold for motor components: insulator, housing, fan using Solidworks and Siemens NX. <br>
-              - Simulate plastic injection molding using CAD Doctor, Moldflow. <br>
-              - Support on modify, set up and debug universal machine for various purpose in motor assembly line. <br>              
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 timeline-right px-4 pt-3 js-scroll fade-in-bottom">
-            <div class="title">05.2016-09.2016</div>
-            <div class="font-italic">HCMC, Vietnam</div>
-          </div>
-          <div class="col-lg-6 order-lg-first px-4 pt-3 js-scroll fade-in-bottom" >
-            <div class="text-lg-right job-title" data-toggle="collapse" data-target="#Ex4">
-              <div class="title-strong">CAE Engineer Intern</div>
-              <div class="d-inline-flex justify-content-end align-items-center">
-                <div class="title mr-2">ESI Vietnam</div> 
-                <div class="flex-end btn btn-expand material-icons">expand_more</div>
-              </div>
-            </div>
-            <div class="pt-2 collapse show" id="Ex4">
-              - Modeling and meshing car safety contact problems using Visual Mesh. <br>
-              - Perform car safety crash test simulation using FEM and Pam Crash.
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div> -->
 
   <div id="project" class="py-5">
     <div class="container py-5">
