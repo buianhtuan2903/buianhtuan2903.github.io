@@ -21,10 +21,10 @@
   --bat-darkblue: #292E39; */
 }
 
-*{
+*, html{
   box-sizing: border-box;
   overflow-wrap: break-word;
-  font-size: 16px;
+  font-size: 1.4vh;
   scroll-behavior: smooth;
   font-family: 'Rubik', sans-serif; 
 }
@@ -81,7 +81,7 @@ li{
   background-color:var(--bg-secondary);
 }
 
-.all-content, a, .second-color, .nav-link, .nav-item, .info, .btn-expand, .btn-price, .flip-front, .btn-price:hover, .btn-expand:hover{
+.all-content, a, .second-color, .nav-link, .nav-item, .info, .btn-expand, .btn-price, .btn-price:hover, .btn-expand:hover{
   color: var(--txt-primary);
 }
 
@@ -89,8 +89,8 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   color: var(--txt-secondary);
 }
 
-.landing-title, .job-title, .card-header{
-  color: var(--bat-primary);
+.job-title, .card-header{
+  color: var(--bat-light);
 }
 
 .btn-expand{
@@ -165,7 +165,7 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
 
 /* Typo */
 .landing-title{
-  font-size: 2.6rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -183,6 +183,10 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   font-size: 1.2rem;
   font-weight: 700;
   border-bottom: 1px solid var(--txt-opacity);
+}
+
+.material-icons{
+  align-self:center;
 }
 
 /* Navbar */
@@ -494,5 +498,8 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   }
 }
 
-/*  */
-
+/*typewrite*/
+.typewrite{
+  color: var(--bat-primary);
+  border-right: 0.6em solid #406BB8;
+}

@@ -18,12 +18,12 @@ TxtType.prototype.tick = function() {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    this.el.innerHTML = this.txt;
 
     var that = this;
-    var delta = 200 - Math.random() * 100;
+    var delta = 170 - Math.random() * 100;
 
-    if (this.isDeleting) { delta /= 2; }
+    if (this.isDeleting) { delta /= 2.6; }
 
     if (!this.isDeleting && this.txt === fullTxt) {
     delta = this.period;
@@ -31,7 +31,7 @@ TxtType.prototype.tick = function() {
     } else if (this.isDeleting && this.txt === '') {
     this.isDeleting = false;
     this.loopNum++;
-    delta = 500;
+    delta = 400;
     }
 
     setTimeout(function() {
@@ -48,9 +48,4 @@ window.onload = function() {
           new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
 };
