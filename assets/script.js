@@ -23,7 +23,7 @@ TxtType.prototype.tick = function() {
     var that = this;
     var delta = 170 - Math.random() * 100;
 
-    if (this.isDeleting) { delta /= 2.6; }
+    if (this.isDeleting) { delta /= 2.8; }
 
     if (!this.isDeleting && this.txt === fullTxt) {
     delta = this.period;

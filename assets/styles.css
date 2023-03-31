@@ -24,17 +24,13 @@
 *, html{
   box-sizing: border-box;
   overflow-wrap: break-word;
-  font-size: 1.4vh;
+  font-size: 1.5vmin;
   scroll-behavior: smooth;
   font-family: 'Rubik', sans-serif; 
 }
 
 a, a:link, a:hover{
   text-decoration: none;
-}
-
-.row{
-  margin: 0px;
 }
 
 ul{
@@ -46,7 +42,7 @@ li{
 }
 
 .material-icons{
-  font-size: 24px !important;
+  font-size: 1.4rem !important;
 }
 
 .btn{
@@ -91,12 +87,6 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
 
 .job-title, .card-header{
   color: var(--bat-light);
-}
-
-.btn-expand{
-  padding: 4px;
-  border-radius: 50%;
-  background-color: var(--txt-opacity);
 }
 
 .btn-price{
@@ -165,7 +155,7 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
 
 /* Typo */
 .landing-title{
-  font-size: 3rem;
+  font-size: 3.4rem;
   font-weight: 700;
 }
 
@@ -199,6 +189,10 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   justify-content: center;
   align-self: center;
   cursor: pointer;
+}
+
+.nav-item{
+  font-weight: 500;
 }
 
 /* Landing */
@@ -239,13 +233,6 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
 #skill{
   -webkit-clip-path: polygon(0 0, 100% calc(0% + 40px), 100% 100%, 0 calc(100% - 40px));
   clip-path: polygon(0 0, 100% calc(0% + 40px), 100% 100%, 0 calc(100% - 40px));
-}
-
-#flip{
-  display: inline-flex;
-  margin: auto;
-  justify-content: center;
-  cursor: pointer;
 }
 
 /* Project */
@@ -430,7 +417,6 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
 /* Image zoom on click */
 #CVImg{
   width: 100%;
-  border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
