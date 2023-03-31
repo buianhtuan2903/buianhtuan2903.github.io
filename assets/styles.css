@@ -202,6 +202,10 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
 }
 
 /* Landing */
+#landing{
+  padding: 5rem 0;
+}
+
 .info{
   display: flex;
   margin: 1.1rem;
