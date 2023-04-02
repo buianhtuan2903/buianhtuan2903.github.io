@@ -230,20 +230,6 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
 }
 
 /* About */
-.triangle{
-  height: 22rem;
-  width: 22rem;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
-	clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
-}
-
-.triangle-flip{
-  height: 22rem;
-  width: 22rem;
-  -webkit-clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-	clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-}
-
 .rectangle{
   height: 22rem;
   width: 22rem;
