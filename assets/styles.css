@@ -24,10 +24,13 @@
 *, html{
   box-sizing: border-box;
   overflow-wrap: break-word;
-  /* font-size: calc(15px + 0.390625vw); */
-  font-size: calc(1vw + 1vh+ 1vmin);
   scroll-behavior: smooth;
-  font-family: 'Rubik', sans-serif; 
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+}
+
+.all-content{
+  min-height: 100vh;
 }
 
 a, a:link, a:hover{
@@ -42,10 +45,6 @@ li{
   list-style: none;
 }
 
-.material-icons{
-  font-size: 1.4rem !important;
-}
-
 .btn{
   display: flex;
   width: fit-content;
@@ -53,11 +52,16 @@ li{
   border: none;
 }
 
+.app-icon{
+  padding: 0.4rem;
+  font-size: 42px !important;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 4px;
 }
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track, [class*='wave'] {
   background: var(--txt-primary); 
 }
 ::-webkit-scrollbar-thumb {
@@ -65,20 +69,20 @@ li{
 }
 
 /* Color */
-.main-color, .main-color:hover, .btn-price, .btn-price:hover, .btn-expand:hover{
+.main-color, .main-color:hover, .btn-price{
   color: var(--bat-light) !important;
   background-color: var(--bat-primary);
 }
 
-.navbar, #landing, #project{
+.all-content, .navbar, #landing, #project, #bottom{
   background-color: var(--bg-primary);
 }
 
-.all-content, #about, #skill, #experience, .card, .card-header, #bottom {
+#about, #skill, #experience, .card, .card-header {
   background-color:var(--bg-secondary);
 }
 
-.all-content, a, .second-color, .nav-link, .nav-item, .info, .btn-price, .btn-price:hover{
+.all-content, a, .second-color, .nav-link, .nav-item, .info, [class*='wave']{
   color: var(--txt-primary);
 }
 
@@ -90,17 +94,12 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   color: var(--bat-light);
 } */
 
-.btn-price{
-  font-weight: 700;
-  display:inline-flex;
-}
-
 .main-color:hover{
   transform: scale(1.1);
   transition: 0.6s;
 }
 
-/* Change Theme */
+/* Change Theme button */
 .checkbox{
   display: none;
 }
@@ -114,8 +113,8 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   border-radius: 2rem;
   height: 2.5rem;
   width: 5rem;
-  padding: 0 0.5rem;
-  margin: 0 1em;
+  padding: 0 0.4rem;
+  margin: 0 0.4em;
   cursor: pointer;
 }
 
@@ -137,18 +136,28 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
 }
 
 .checkbox:checked + .all-content{
-  --bg-primary: var(--bat-secondary);
-  --bg-secondary: var(--bat-light);
-  --txt-primary: var(--bat-dark);
-  --txt-secondary: var(--bat-primary);
-  --txt-opacity: var(--bat-opacity2);
-  --dark-opacity: 1;
-  --light-opacity: 0;
+  --bg-primary: var(--bat-secondary) !important;
+  --bg-secondary: var(--bat-light) !important;
+  --txt-primary: var(--bat-dark) !important;
+  --txt-secondary: var(--bat-primary) !important;
+  --txt-opacity: var(--bat-opacity2) !important;
+  --dark-opacity: 1 !important;
+  --light-opacity: 0 !important;
 }
 
 /* Typo */
+@media only screen and (max-width: 576px){
+  .landing-title{
+    font-size: 3rem !important;
+  }
+  .title-page{
+    font-size: 0.4rem;
+    font-weight: 500;
+  }
+}
+
 .landing-title{
-  font-size: 3.4rem;
+  font-size: 4rem;
   font-weight: 700;
 }
 
@@ -157,7 +166,7 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   font-weight: 700;
 }
 
-.title{
+.title, .title-page{
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -168,7 +177,7 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   border-bottom: 1px solid var(--txt-opacity);
 }
 
-.material-icons{
+.material-symbols-rounded{
   align-self:center;
 }
 
@@ -190,10 +199,6 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
 }
 
 /* Landing */
-/* #landing{
-  padding: 5rem 0;
-} */
-
 /* .info{
   display: flex;
   margin: 1.1rem;
@@ -450,7 +455,6 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
 }
 
-
 .modal-content {
   margin: auto;
   display: block;
@@ -506,3 +510,114 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
   color: var(--bat-primary);
   border-right: 0.6em solid #406BB8;
 }
+
+/* Music */
+audio{
+  display: none;
+  color: var(--bat-light) !important;
+  background-color: var(--bg-primary);
+}
+
+.music-control{
+  align-self:center;
+  font-size: 32px !important;
+}
+
+section {
+  display: flex;
+  gap: 0.2em;
+}
+
+.wave2, .wave3, .wave4, .wave5, .wave6, .wave7{
+  /* aspect-ratio: .2/1; */
+  /*This can all be written on one line:*/
+  animation: waveform var(--wavefreq)
+             ease-in-out infinite
+             forwards;
+  border-radius: 0.2em;
+  width: .2rem;
+  height: 1rem;
+}
+
+.wave1, .wave8 {
+  animation: waveform2 var(--wavefreq)
+             ease-in-out infinite
+             forwards;
+  border-radius: 0.2em;
+  width: .2rem;
+  height: 1rem;
+}
+
+@keyframes waveform {
+  0% {
+    transform: scaleY(.4);
+  }
+  50% {
+    transform: scaleY(1.6);
+  }
+  100% {
+    transform: scaleY(.4);
+  }
+}
+
+@keyframes waveform2 {
+  0% {
+    transform: scaleY(.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(.3);
+  }
+}
+
+.wave1 {
+  --wavefreq: calc(400ms * 17.5);
+}
+.wave2 {
+  --wavefreq: calc(200ms * 17.5);
+}
+.wave3 {
+  --wavefreq: calc(300ms * 17.5);
+}
+.wave4 {
+  --wavefreq: calc(360ms * 17.5);
+}
+.wave5 {
+  --wavefreq: calc(260ms * 17.5);
+}
+.wave6 {
+  --wavefreq: calc(220ms * 17.5);
+}
+.wave7 {
+  --wavefreq: calc(340ms * 17.5);
+}
+.wave8 {
+  --wavefreq: calc(440ms * 17.5);
+}
+
+/* audio::-webkit-media-controls-timeline, 
+audio::-webkit-media-controls-timeline-container, 
+audio::-webkit-media-controls-current-time-display, 
+audio::-webkit-media-controls-time-remaining-display, 
+audio::-webkit-media-controls-timeline, 
+audio::-webkit-media-controls-seek-back-button, 
+audio::-webkit-media-controls-seek-forward-button, 
+audio::-webkit-media-controls-fullscreen-button, 
+audio::-webkit-media-controls-rewind-button, 
+audio::-webkit-media-controls-return-to-realtime-button, 
+audio::-webkit-media-controls-toggle-closed-captions-button{
+  display: none;
+}
+
+audio, 
+audio::-webkit-media-controls-enclosure, 
+audio::-webkit-media-controls-panel, 
+audio::-webkit-media-controls-mute-button, 
+audio::-webkit-media-controls-play-button, 
+audio::-webkit-media-controls-volume-slider-container, 
+audio::-webkit-media-controls-volume-slider{
+ 
+} */
+
