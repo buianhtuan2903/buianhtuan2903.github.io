@@ -238,7 +238,7 @@ a:hover, .second-color:hover, .nav-item:hover, .info:hover{
 .rectangle{
   height: 22rem;
   width: 22rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 /* Project */
